@@ -1,0 +1,137 @@
+@charset "utf-8";
+/* CSS Document */
+.formulario {
+	background: #E8E8E8 url(../img/bg.jpg) repeat top left;
+	display: none;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+.formulario h3 {
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+.display {
+	display: inline-block;
+}
+.formulario ul {
+	margin: 0px;
+	padding: 0px;
+	display: inline-block
+}
+.formulario li {
+	float: left;
+	margin: 5px;
+	font-size: 12px;
+}
+.Btn_contacto {
+	display: block;
+	width: 200px;
+	background: #E8E8E8 url(../img/bg.jpg) repeat top left;
+	text-align: center;
+	padding: 0;
+	float: right;
+	font-weight: bold;
+	cursor: pointer;
+	margin: 0;
+}
+#leyendaInfo {
+	display: block;
+	width: 30%;
+	float: left;
+	color: #4c4c4c;
+	font-size: 14px;
+	font-weight: 600;
+	margin-left: 15px
+}
+#form1 {
+	display: block;
+	width: 66%;
+	float: left;
+	margin-left: 10px;
+}
+#form_buzon{ width:99%; }
+#form_buzon ul{ width:95%; margin:0 auto; display:block }
+#form_buzon ul li{ display:block;}
+#form_buzon input { width:95%;}
+#form_buzon textarea { width:96%;}
+
+input {
+	color: #333;
+	padding: 5px;
+	font-size: 14px;
+}
+select {
+	border: #fff;
+	color: #333;
+	padding: 4px;
+	font-size: 14px;
+}
+#form_estudios input {width:100%;}
+#form_estudios textarea {width:100%;}
+#form_estudios ul{ margin:5px 0; padding:0;}
+#form_estudios fieldset{ width:90%; margin:0 auto;}
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+.formulario {
+	background: #E8E8E8 url(../img/bg.jpg) repeat top left;
+	display: none;
+	height: auto;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+.formulario h3 {
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+.display {
+	display: inline-block;
+}
+.formulario ul {
+	margin: 0px;
+	padding: 0px;
+	display: inline-block
+}
+.formulario li {
+	float: left;
+	margin: 5px;
+	font-size: 12px;
+}
+.Btn_contacto {
+	display: block;
+	width: 200px;
+	background: #E8E8E8 url(../img/bg.jpg) repeat top left;
+	text-align: center;
+	padding: 0;
+	float: right;
+	font-weight: bold;
+	cursor: pointer;
+	margin: 0;
+}
+#leyendaInfo {
+	display: inline-block;
+	clear: both;
+	width: 90%;
+	color: #4c4c4c;
+	font-size: 14px;
+	font-weight: 600;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+#form1 {
+	display: block;
+	width: 66%;
+	float: left;
+	margin-left: 10px;
+}
+input {
+	border: #fff;
+	color: #8c8b8b;
+	padding: 5px;
+	font-size: 14px;
+}
+select {
+	border: #fff;
+	color: #8c8b8b;
+	padding: 4px;
+	font-size: 14px;
+}
+}

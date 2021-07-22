@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* Para Chrome y safari */
+::-webkit-scrollbar{
+  width: 10px;
+  background: #fff;
+}
+::-webkit-scrollbar-button{
+  width:8px;
+  height: 5px;
+}
+::-webkit-scrollbar-track{
+  background:#fff;
+}
+
+::-webkit-scrollbar-thumb{
+  background:rgba(74,74,74,0.20);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+   background:rgba(74,74,74,1.00);
+}
+
+
+/* Para Chrome y safari */
+scrollbar{
+  width: 10px;
+  background: #fff;
+}
+scrollbar-button{
+  width:8px;
+  height: 5px;
+}
+scrollbar-track{
+  background:#fff;
+}
+
+scrollbar-thumb{
+  background:rgba(74,74,74,0.20);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+scrollbar-thumb:hover{
+   background:rgba(74,74,74,1.00);
+}
+
+
+/* mozilla */
+::-moz-scrollbar{
+  width: 10px;
+  background: #fff;
+}
+::-moz-scrollbar-button{
+  width:8px;
+  height: 5px;
+}
+::-moz-scrollbar-track{
+  background:#fff;
+}
+
+::-moz-scrollbar-thumb{
+  background:rgba(74,74,74,0.20);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+::-moz-scrollbar-thumb:hover{
+   background:rgba(74,74,74,1.00);
+}

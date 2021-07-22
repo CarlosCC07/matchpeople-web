@@ -1,0 +1,243 @@
+@charset "utf-8";
+#logo {
+	width: 277px;
+	float: left;
+	padding: 0px;
+	margin: 10px 0px 0px 10px;
+}
+#logo ul {
+	margin: 0px;
+	padding: 0px;
+}
+#logo ul li {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	alignment-baseline: central
+}
+#icono a {
+	border: 0;
+}
+#logomatch {
+	padding-left: 10px;
+	padding-top: 6px
+}
+/*------------------------------------*\
+    Flaunt JS Navigation
+\*------------------------------------*/
+
+.nav {
+	position: relative;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 900;
+	z-index: 100;
+	padding-top: 25px;
+}
+.nav-list {
+	text-align: left;
+}
+.nav-item {
+	float: left;
+ *display:inline;
+	zoom: 1;
+	position: relative;
+}
+.nav-item a {
+	display: block;
+	color: #FFF;
+	padding: 15px 15px;
+	/*border-bottom: 1px solid #8C4C4D;*/
+	text-decoration: none;
+	font-weight: 800;
+}
+.nav-item a:hover {
+	background: #555353;
+}
+.nav-item:hover .nav-submenu {
+	display: block;
+}
+.nav-lastmenu:hover {
+	display: block;
+}
+/*------------------------------------*\
+    Navigation submenu
+\*------------------------------------*/
+
+.nav-submenu {
+	display: none;
+	position: absolute;
+	left: 0;
+	width: 200px;
+}
+.nav-submenu-item a {
+	background: #820f11;
+	border-bottom: 1px solid #8C4C4D;
+	display: block;
+	padding: 15px;
+}
+
+
+.nav-submenu-item a:hover {
+	background: #555353;
+}
+/*------------------------------------*\
+    Navigation lastmenu
+\*------------------------------------*/
+
+.nav-lastmenu {
+	display: none;
+	position: absolute;
+	width: 200px;
+}
+.nav-lastmenu-item a {
+	border-bottom: 1px solid #8C4C4D;
+	display: block;
+	padding: 15px;
+}
+.nav-lastmenu-item a:hover {
+	background: #555353;
+}
+/*------------------------------------*\
+    Mobile navigation
+\*------------------------------------*/
+.nav-mobile {
+	display: none; /* Hide from browsers that don't support media queries */
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #555353 url(../img/nav.svg) no-repeat center center;
+	background-size: 18px;
+	height: 50px;
+	width: 50px;
+}
+/* Mobile navigation, clickable area for revealing <ul> */
+.nav-click {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: none;
+	border-left: 1px solid #8C4C4D;
+	height: 49px;
+	width: 50px;
+	cursor: pointer;
+}
+.nav-click i {
+	display: block;
+	height: 48px;
+	width: 48px;
+	background: url(../img/drop.svg) no-repeat center center;
+	background-size: 20px;
+}
+.nav-click:hover {
+	background-color: #555353;
+}
+.nav-rotate {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+/* Mobile navigation, clickable area for revealing <ul> in nav- submenu*/
+.nav-lastmenu-click {
+	position: absolute;
+	right: 0;
+	display: none;
+	border-left: 1px solid #8C4C4D;
+	height: 49px;
+	width: 50px;
+	cursor: pointer;
+}
+.nav-lastmenu-click i {
+	display: block;
+	height: 48px;
+	width: 48px;
+	background: url(../img/drop.svg) no-repeat center center;
+	background-size: 20px;
+}
+.nav-lastmenu-click:hover {
+	background-color: #555353;
+}
+
+/*------------------------------------*\
+    Media Queries
+\*------------------------------------*/
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+#logo {
+	width: 100%;
+	padding: 0px;
+	margin: 0;
+}
+#logo ul {
+	margin: 0px;
+	padding: 0px;
+}
+#logo li {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+#icono a {
+	border: 0;
+}
+
+.nav-item a {
+	border-bottom: 1px solid #8C4C4D;
+}
+.nav-mobile {
+	display: block;
+}
+.nav-mobile-open {
+	border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+}
+.nav {
+	width: 100%;
+	padding: 50px 0 0;
+}
+.nav-list {
+	display: none;
+}
+.nav-item {
+	width: 100%;
+	float: none;
+}
+.nav-item > a {
+	padding: 15px;
+}
+.nav-click {
+	display: block;
+}
+.nav-lastmenu-click {
+	display: block;
+}
+.nav-item:hover .nav-submenu {
+	display: none;
+}
+.nav-submenu {
+	position: static;
+	width: 100%;
+}
+.nav-submenu-item {
+	width: 100%;
+	float: none;
+}
+.nav-submenu-item > a {
+	padding: 15px;
+}
+.nav-lastmenu {
+	width: 100%;
+	position: static;
+}
+.nav-lastmenu-item > a {
+	width: 100%;
+	float: none;
+	display: block;
+	padding: 15px;
+	background-color: #9E2022;
+}
+}

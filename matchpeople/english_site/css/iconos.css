@@ -1,0 +1,1349 @@
+ @charset "utf-8";
+/*------------------------------------*\
+    Redes Sociales
+\*------------------------------------*/
+
+/* Facebook */
+#facebook {
+	width: 20px;
+	height: 20px;
+	text-indent: 25px;
+}
+#facebook a {
+	outline: none;/* get rid of dotted borders in FireFox */
+	display: block;
+	width: 120px;
+	height: 20px;
+	background: url(../img/facebook.png) no-repeat;
+	text-decoration: none;
+}
+#facebook a:hover {
+	background-position: 0 -21px;
+}
+/* twitter */
+#twitter {
+	width: 20px;
+	text-indent: 25px;
+}
+#twitter a {
+	outline: none;/* get rid of dotted borders in FireFox */
+	display: block;
+	width: 120px;
+	height: 20px;
+	background: url(../img/twitter.png) no-repeat;
+	text-decoration: none;
+}
+#twitter a:hover {
+	background-position: 0 -21px;
+}
+/* Linkedin*/
+#linkedin {
+	width: 120px;
+	text-indent: 25px;
+}
+#linkedin a {
+	outline: none;/* get rid of dotted borders in FireFox */
+	display: block;
+	width: 120px;
+	height: 20px;
+	background: url(../img/link.png) no-repeat;
+	text-decoration: none;
+}
+#linkedin a:hover {
+	background-position: 0 -21px;
+}
+/* Google Plus */
+#googleplus {
+	width: 20px;
+	text-indent: 25px;
+}
+#googleplus a {
+	outline: none;/* get rid of dotted borders in FireFox */
+	display: block;
+	width: 120px;
+	height: 20px;
+	background: url(../img/google.png) no-repeat;
+	text-decoration: none;
+}
+#googleplus a:hover {
+	background-position: 0 -21px;
+}
+
+/* Blog */
+#blog {
+	width: 20px;
+	height: 20px;
+	text-indent: 25px;
+}
+#blog a {
+	outline: none;/* get rid of dotted borders in FireFox */
+	display: block;
+	width: 120px;
+	height: 20px;
+	background: url(../img/blog.png) no-repeat;
+	text-decoration: none;
+}
+#blog a:hover {
+	background-position: 0 -21px;
+}
+
+/* ....End Redes Sociales.... */
+
+/*------------------------------------*\
+    Servicios
+\*------------------------------------*/
+@media only screen and (min-width: 10px) and (max-width: 481px) {
+.displayTitleTsubmenu {
+	cursor: pointer;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-top: 5px;
+}
+
+.tt-wrapper {
+	display: none;
+}
+.tt-wrapper li a {
+	text-decoration: none;
+	width: 100%;
+	display: inline-block;
+	color: #474747;
+	border-bottom: #333333 thin solid;
+	padding: 5px 0 5px 5px;
+}
+.tt-wrapper li a span {
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+	text-decoration: none;
+	width: 100%;
+	display: block;
+}
+.tt-wrapper li a:hover {
+	color: #fff;
+	background: #333333;
+	border-bottom: thin #fff solid;
+}
+.tt-wrapper li a span:before, .tt-wrapper li a span:after {
+}
+.displayTitle {
+	color: fff;
+	display: block;
+	padding: 8px 0;
+	width: 95%;
+	margin: 0 auto;
+	cursor: pointer;
+	moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	background: #5ba4a4;
+	background: -moz-linear-gradient(top, #711210 0%, #5a0e10 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #711210), color-stop(100%, #5a0e10));
+	background: -webkit-linear-gradient(top, #711210 0%, #5a0e10 100%);
+	background: -o-linear-gradient(top, #711210 0%, #5a0e10 100%);
+	background: -ms-linear-gradient(top, #711210 0%, #5a0e10 100%);
+	background: linear-gradient(top, #711210 0%, #5a0e10 100%);
+}
+#serviciosPrincipales {
+	margin-top: 20px;
+	margin-bottom: 15px
+}
+#serviciosPrincipales > a {
+	color: #fff;
+	font-size: 15px;
+	font-weight: 600;
+}
+#serviciosPrincipales ul {
+	margin: 0;
+	padding: 0;
+}
+#serviciosPrincipales li {
+	width: 95%;
+	margin: 0 auto;
+}
+#serviciosPrincipales li a {
+	font-size: 14px;
+	width: 100%;
+	display: inline-block;
+	padding: 8px 0 8px 0;
+	text-decoration: none;
+	font-weight: 600;
+	color: #313030;
+	border-bottom:thin rgba(150,148,148,1.00) solid;
+	background-color:rgba(233,229,229,1.00);
+}
+#serviciosPrincipales li a:hover {
+	color: #fff;
+	background: #333333;
+	border-bottom: thin #fff solid;
+}
+.displaytext {
+	display: none;
+}
+.displaytext-line {
+	display: block;
+}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 5000px) {
+.displayTitle {
+	display: none;
+}
+.displaytext {
+	display: inline-block;
+}
+.tt-wrapper li a span {
+	width: 100px;
+	height: auto;
+	line-height: 20px;
+	padding: 10px;
+	left: 50%;
+	margin-left: -54px;
+	font-weight: 500;
+	font-size: 14px;
+	color: #711210;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	border: 4px solid rgba(255,255,255,0.8);
+	background: rgba(255,255,255,1.0);
+	text-indent: 0px;
+	border-radius: 3px;
+	position: absolute;
+	pointer-events: none;
+	bottom: 100px;
+	opacity: 0;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.tt-wrapper li a span:before, .tt-wrapper li a span:after {
+	content: '';
+	position: absolute;
+	bottom: -15px;
+	left: 50%;
+	margin-left: -20px;
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid rgba(0,0,0,0.3);
+}
+.tt-wrapper li a span:after {
+	bottom: -14px;
+	margin-left: -17px;
+	border-top: 10px solid #fff;
+}
+.tt-wrapper li a:hover span {
+	opacity: 0.9;
+	bottom: 40px;
+}
+/* consultoria */
+#consultoria {
+	width: 80px;
+	text-align: center;
+}
+#consultoria a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	position: relative;
+	width: 61px;
+	height: 62px;
+	background: url(../img/servicios/consultoria.png);
+	background-position: 0 -62px;
+	margin: 10px auto;
+	text-decoration: none;
+}
+#consultoria a:hover {
+	background-position: 0 1px;
+	background-repeat: no-repeat;
+	height: 62px;
+}
+/*Controla como apparece el texto */
+#consultoria a span {
+	z-index: 30;
+	width: 100px;
+	height: auto;
+	line-height: 20px;
+	padding: 10px;
+	font-weight: 800;
+	font-size: 14px;
+	color: #711210;
+	text-align: center;
+	border: 4px solid #C9C7C7;
+	background: rgba(255,255,255, 1);
+	position: relative;
+	opacity: 0;
+	display: none;
+	pointer-events: none;
+	border-radius: 5px;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+#consultoria a:hover span {
+	opacity: 1;
+	display: block;
+	visibility: visible;
+	bottom: -70px;
+	left: -40px;
+}
+
+
+#consultoria2 {
+	width: 80px;
+	text-align: center;
+}
+#consultoria2 a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	position: relative;
+	width: 64px;
+	height: 62px;
+	background: url(../img/servicios/consultoria.png) no-repeat;
+	margin: 10px auto;
+	text-decoration: none;
+	background-position: 0 -62px;
+}
+#consultoria2 a:hover {
+	background-position: 0 1px;
+	background-repeat: no-repeat;
+	height: 62px;
+}
+
+/* submenu interior*/
+#consultoriaMini {
+	width: 24px;
+	text-align: center;
+}
+#consultoriaMini a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	width: 24px;
+	height: 24px;
+	background: url(../img/servicios/consultoria2.png);
+	background-repeat: no-repeat;
+	text-decoration: none;
+	position: relative;
+}
+#consultoriaMini a:hover {
+	background-position: 0 -25px;
+	background-repeat: no-repeat
+}
+/* compensaciones */
+#compensaciones {
+	width: 80px;
+	text-align: center;
+}
+#compensaciones a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	width: 63px;
+	height: 63px;
+	margin: 10px auto;
+	background: url(../img/servicios/compensaciones.png);
+	text-decoration: none;
+	background-position: 0 -63px;
+}
+#compensaciones a:hover {
+	background-position: 0 1px;
+	background-repeat: no-repeat;
+	height: 63px;
+}
+/*Controla como apparece el texto y el span */
+#compensaciones a span {
+	z-index: 30;
+	width: 100px;
+	height: auto;
+	line-height: 20px;
+	padding: 10px;
+	font-weight: 800;
+	font-size: 14px;
+	color: #711210;
+	text-align: center;
+	border: 4px solid #C9C7C7;
+	background: rgba(255,255,255,0.9);
+	text-indent: 0px;
+	border-radius: 5px;
+	position: relative;
+	opacity: 0;
+	display: none;
+	pointer-events: none;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);	
+}
+#compensaciones a:hover span {
+	opacity: 1;
+	display: block;
+	visibility: visible;
+	bottom: -70px;
+	left: -35px;
+}
+
+/*#compensacionesMini {
+	width: 24px;
+	text-align: center;
+}
+#compensacionesMini a {
+	outline: none; get rid of dotted borders in Firefox 
+	display: block;
+	width: 24px;
+	height: 24px;
+	background: url(../img/servicios/compensaciones2.png);
+	text-decoration: none;
+	position: relative;
+}
+#compensacionesMini a:hover {
+	background-position: 0 -24px;
+	background-repeat: no-repeat
+}*/
+
+#compensaciones2 {
+	width: 80px;
+	text-align: center;
+}
+#compensaciones2 a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	width: 64px;
+	height: 63px;
+	margin: 10px auto;
+	background: url(../img/servicios/compensaciones.png) no-repeat ;
+	background-position: 0 -63px;
+	text-decoration: none;
+}
+#compensaciones2 a:hover {
+	background-position: 0 1px;
+	background-repeat: no-repeat;
+	height: 63px;
+}
+
+/* outsourcing */
+#outsourcing {
+	width:SS 65px;
+	text-align: center;
+}
+#outsourcing a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	width: 64px;
+	height: 63px;
+	margin: 10px auto;
+	background: url(../img/servicios/outsourcing.png);
+	text-decoration: none;
+	background-position: 0 -63px;
+}
+#outsourcing a:hover {
+	background-position: 0 1px;
+	background-repeat: no-repeat;
+	height: 63px;;
+}
+/*Controla como apparece el texto */
+#outsourcing a span {
+	z-index: 30;
+	width: 100px;
+	height: auto;
+	line-height: 20px;
+	padding: 10px;
+	font-weight: 800;
+	font-size: 14px;
+	color: #711210;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+	text-align: center;
+	border: 4px solid #C9C7C7;
+	background: rgba(255,255,255,0.9);
+	text-indent: 0px;
+	border-radius: 5px;
+	position: relative;
+	display: none;
+	pointer-events: none;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+#outsourcing a:hover span {
+	opacity: 1;
+	display: block;
+	visibility: visible;
+	bottom: -70px;
+	left: -35px;
+}
+
+#outsourcing2 {
+	width: 80px;
+	text-align: center;
+}
+#outsourcing2 a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	width: 64px;
+	height: 63px;
+	margin: 10px auto;
+	background: url(../img/servicios/outsourcing.png) no-repeat;
+	text-decoration: none;
+	background-position: 0 -63px;
+}
+#outsourcing2 a:hover {
+	background-position: 0 1px;
+	background-repeat: no-repeat;
+	height: 63px;
+}
+
+/*#outsourcingMini {
+	width: 24px;
+	text-align: center;
+}
+#outsourcingMini a {
+	outline: none; get rid of dotted borders in Firefox 
+	display: block;
+	width: 24px;
+	height: 24px;
+	background: url(../img/servicios/outsourcing2.png);
+	text-decoration: none;
+	position: relative;
+}
+#outsourcingMini a:hover {
+	background-position: 0 -24px;
+	background-repeat: no-repeat;
+	height: 25px;
+}*/
+/* 9block */
+#block {
+	width: 80px;
+	text-align: center;
+}
+#block a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	width: 62px;
+	height: 62px;
+	margin: 10px auto;
+	background: url(../img/servicios/9block.png);
+	text-decoration: none;
+	background-position: 0 -63px;
+}
+#block a:hover {
+	background-position: 0 1px;
+	background-repeat: no-repeat;
+	height: 62px;
+}
+/*Controla como apparece el texto */
+#block a span {
+	z-index: 30;
+	width: 100px;
+	height: auto;
+	line-height: 20px;
+	padding: 10px;
+	font-weight: 800;
+	font-size: 14px;
+	color: #711210;
+	text-align: center;
+	border: 4px solid #C9C7C7;
+	background: rgba(255,255,255,0.9);
+	text-indent: 0px;
+	border-radius: 5px;
+	position: relative;
+	display: none;
+	pointer-events: none;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+#block a:hover span {
+	opacity: 1;
+	display: block;
+	visibility: visible;
+	bottom: -70px;
+	left: -35px;
+}
+
+
+#block2 {
+	width: 80px;
+	text-align: center;
+}
+#block2 a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	width: 64px;
+	height: 62px;
+	margin: 10px auto;
+	background: url(../img/servicios/9block.png) no-repeat;
+	text-decoration: none;
+	background-position: 0 -63px;
+}
+#block2 a:hover {
+	background-position: 0 1px;
+	background-repeat: no-repeat;
+	height: 62px;
+}
+
+/*#blockMini {
+	width: 24px;
+	text-align: center;
+}
+#blockMini a {
+	outline: none; get rid of dotted borders in Firefox
+	display: block;
+	width: 23px;
+	height: 24px;
+	background: url(../img/servicios/block2.png);
+	text-decoration: none;
+	position: relative;
+}
+#blockMini a:hover {
+	background-position: 0 -24px;
+	background-repeat: no-repeat
+} */
+
+/* multiperceptual */
+#multiperceptual {
+	width: 63px;
+	text-align: center;
+}
+#multiperceptual a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	width: 63px;
+	height: 63px;
+	margin: 10px auto;
+	background: url(../img/servicios/360.png);
+	text-decoration: none;
+	background-position: 0 -63px;
+}
+#multiperceptual a:hover {
+	background-position: 0 -1px;
+	background-repeat: no-repeat;
+	height: 63px;
+}
+/*Controla como apparece el texto */
+#multiperceptual a span {
+	z-index: 30;
+	width: 100px;
+	height: auto;
+	line-height: 20px;
+	padding: 10px;
+	font-weight: 800;
+	font-size: 14px;
+	color: #711210;
+	display: none;
+	text-align: center;
+	border: 4px solid #C9C7C7;
+	background: rgba(255,255,255,0.9);
+	text-indent: 0px;
+	border-radius: 5px;
+	position: relative;
+	pointer-events: none;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+#multiperceptual a:hover span {
+	opacity: 1;
+	display: block;
+	visibility: visible;
+	bottom: -70px;
+	left: -35px;
+}
+
+#multiperceptual2 {
+	width: 80px;
+	text-align: center;
+}
+#multiperceptual2 a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	width: 64px;
+	height: 63px;
+	margin: 10px auto;
+	background: url(../img/servicios/360.png) no-repeat;
+	text-decoration: none;
+	background-position: 0 -63px;
+}
+#multiperceptual2 a:hover {
+	background-position: 0 -1px;
+	background-repeat: no-repeat;
+	height: 63px;
+}
+
+/*#multiperceptualMini {
+	width: 24px;
+	text-align: center;
+}
+#multiperceptualMini a {
+	outline: none; get rid of dotted borders in Firefox 
+	display: block;
+	width: 24px;
+	height: 25px;
+	background: url(../img/servicios/3602.png);
+	text-decoration: none;
+	position: relative;
+}
+#multiperceptualMini a:hover {
+	background-position: 0 -25px;
+	background-repeat: no-repeat;
+}*/
+/* clima */
+#clima {
+	width: 80px;
+	text-align: center;
+}
+#clima a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	width: 62px;
+	height: 62px;
+	margin: 10px auto;
+	background: url(../img/servicios/clima.png);
+	text-decoration: none;
+	background-position: 0 -62px;
+}
+#clima a:hover {
+	background-position: 0 1px;
+	background-repeat: no-repeat;
+	height: 62px;
+}
+/*Controla como apparece el texto */
+#clima a span {
+	z-index: 30;
+	width: 100px;
+	height: auto;
+	line-height: 20px;
+	padding: 10px;
+	font-weight: 800;
+	font-size: 14px;
+	color: #711210;
+	text-align: center;
+	border: 4px solid #C9C7C7;
+	background: rgba(255,255,255,0.9);
+	text-indent: 0px;
+	border-radius: 5px;
+	position: relative;
+	display: none;
+	pointer-events: none;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+#clima a:hover span {
+	opacity: 1;
+	display: block;
+	visibility: visible;
+	bottom: -70px;
+	left: -35px;
+}
+
+#clima2 {
+	width: 80px;
+	text-align: center;
+}
+#clima2 a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	width: 62px;
+	height: 62px;
+	margin: 10px auto;
+	background: url(../img/servicios/clima.png) no-repeat;
+	text-decoration: none;
+	background-position: 0 -62px;
+}
+#clima2 a:hover {
+	background-position: 0 1px;
+	background-repeat: no-repeat;
+	height: 62px;
+}
+
+/*#climaMini {
+	width: 28px;
+	text-align: center;
+}
+#climaMini a {
+	outline: none; get rid of dotted borders in Firefox 
+	display: block;
+	width: 26px;
+	height: 25px;
+	background: url(../img/servicios/clima2.png);
+	text-decoration: none;
+	position: relative;
+	background-repeat: no-repeat;
+}
+#climaMini a:hover {
+	background-position: 0 -24px;
+	background-repeat: no-repeat;
+}*/
+
+/* balance */
+#balance {
+	width: 80px;
+	text-align: center;
+}
+#balance a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	width: 45px;
+	height: 63px;
+	margin: 10px auto;
+	background: url(../img/servicios/balance.png);
+	text-decoration: none;
+	background-position: 0 -63px;
+}
+#balance a:hover {
+	background-position: 0 1px;
+	background-repeat: no-repeat;
+	height: 63px;
+}
+/*Controla como apparece el texto */
+#balance a span {
+	z-index: 30;
+	width: 100px;
+	height: auto;
+	line-height: 20px;
+	padding: 10px;
+	font-weight: 800;
+	font-size: 14px;
+	color: #711210;
+	text-align: center;
+	border: 4px solid #C9C7C7;
+	background: rgba(255,255,255,1);
+	text-indent: 0px;
+	border-radius: 5px;
+	position: relative;
+	display: none;
+	pointer-events: none;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	/*Crea movimento de transformacion del span que contiene los textos*//*transsform: translate(x,y) 
+	-webkit-transform: translate(0px) rotate(0deg) scale(1.2);
+	-moz-transform: translate(0px) rotate(0deg) scale(1.2);
+	-o-transform: translate(0px) rotate(0deg) scale(1.2);
+	-ms-transform: translate(0px) rotate(0deg) scale(1.2);
+	transform: translate(0px) rotate(0deg) scale(1.2);
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;*/
+}
+#balance a:hover span {
+	opacity: 1;
+	display: block;
+	visibility: visible;
+	bottom: -70px;
+	left: -35px;
+}
+
+#balance2 {
+	width: 80px;
+	text-align: center;
+}
+#balance2 a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	width: 45px;
+	height: 63px;
+	margin: 10px auto;
+	background: url(../img/servicios/balance.png) no-repeat;
+	text-decoration: none;
+	background-position: 0 -63px;
+}
+#balance2 a:hover {
+	background-position: 0 1px;
+	background-repeat: no-repeat;
+	height: 63px;
+}
+
+/* #balanceMini {
+	width: 18px;
+	text-align: center;
+}
+#balanceMini a {
+	outline: none;get rid of dotted borders in Firefox 
+	display: block;
+	width: 18px;
+	height: 24px;
+	background: url(../img/servicios/balance2.png);
+	text-decoration: none;
+	position: relative;
+}
+#balanceMini a:hover {
+	background-position: 0 -26px;
+	background-repeat: no-repeat;
+}*/
+/* vinculacion */
+#vinculacion {
+	width: 77px;
+	text-align: center;
+}
+#vinculacion a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	width: 77px;
+	height: 63px;
+	margin: 10px auto;
+	background: url(../img/servicios/vinculacion.png);
+	text-decoration: none;
+	background-position: 0 -63px;
+}
+#vinculacion a:hover {
+	background-position: 0 1px;
+	background-repeat: no-repeat;
+	height: 63px;
+}
+/*Controla como apparece el texto */
+#vinculacion a span {
+	z-index: 30;
+	width: 100px;
+	height: auto;
+	line-height: 20px;
+	padding: 10px;
+	font-weight: 800;
+	font-size: 14px;
+	color: #711210;
+	text-align: center;
+	border: 4px solid #C9C7C7;
+	background: rgba(255,255,255,0.9);
+	text-indent: 0px;
+	border-radius: 5px;
+	position: relative;
+	display: none;
+	visibility: visible;
+	pointer-events: none;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	/*Crea movimento de transformacion del span que contiene los textos 
+	-webkit-transform: translate(0px) rotate(0deg) scale(1.2);
+	-moz-transform: translate(0px) rotate(0deg) scale(1.2);
+	-o-transform: translate(0px) rotate(0deg) scale(1.2);
+	-ms-transform: translate(0px) rotate(0deg) scale(1.2);
+	transform: translate(0px) rotate(0deg) scale(1.2);
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;*/
+}
+#vinculacion a:hover span {
+	opacity: 1;
+	display: block;
+	visibility: visible;
+	bottom: -70px;
+	left: -35px;
+}
+#vinculacion2 {
+	width: 80px;
+	text-align: center;
+}
+#vinculacion2 a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	width: 77px;
+	height: 63px;
+	margin: 10px auto;
+	background: url(../img/servicios/vinculacion.png) no-repeat;
+	text-decoration: none;
+	background-position: 0 -63px;
+}
+#vinculacion2 a:hover {
+	background-position: 0 1px;
+	background-repeat: no-repeat;
+	height: 63px;
+}
+
+/*#vinculacionMini {
+	width: 29px;
+	text-align: center;
+}
+#vinculacionMini a {
+	outline: none; get rid of dotted borders in Firefox 
+	display: block;
+	width: 29px;
+	height: 24px;
+	background: url(../img/servicios/vinculacion2.png);
+	text-decoration: none;
+	position: relative;
+}
+#vinculacionMini a:hover {
+	background-position: 0 -24px;
+	background-repeat: no-repeat;
+}*/
+
+/* ...End Sericios... */
+
+/*------------------------------------*\
+    portafolio 
+\*------------------------------------*/
+
+#portafolio {
+	width: 80px;
+	text-align: center;
+}
+#portafolio a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	width: 63px;
+	height: 63px;
+	margin: auto;
+	background: url(../img/servicios/iconoportafolio.png);
+	text-decoration: none;
+	background-position: 0 -62px;
+	background-repeat: no-repeat;
+}
+#portafolio a:hover {
+	background-position: 0 1px;
+	background-repeat: no-repeat
+}
+/*suite*/
+#suite {
+	width: 80px;
+	text-align: center;
+}
+#suite a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	width: 63px;
+	height: 63px;
+	margin: auto;
+	background: url(../img/servicios/suite.png);
+	text-decoration: none;
+	background-position: 0 -62px;
+}
+#suite a:hover {
+	background-position: 0 1px;
+	background-repeat: no-repeat
+}
+/*voxx*/
+#voxx {
+	width: 80px;
+	text-align: center;
+}
+#voxx a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	width: 63px;
+	height: 63px;
+	margin: auto;
+	background: url(../img/servicios/voxx.png);
+	text-decoration: none;
+	background-position: 0 -62px;
+}
+#voxx a:hover {
+	background-position: 0 1px;
+	background-repeat: no-repeat
+}
+/*Centor de evaluación*/
+#evaluacion {
+	width: 80px;
+	text-align: center;
+}
+#evaluacion a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	width: 63px;
+	height: 63px;
+	margin: auto;
+	background: url(../img/servicios/evaluacion.png);
+	text-decoration: none;
+	background-position: 0 -63px;
+}
+#evaluacion a:hover {
+	background-position: 0 1px;
+	background-repeat: no-repeat
+}
+/*Centor de evaluación*/
+#correoElectronico {
+	width: 80px;
+	text-align: center;
+}
+#correoElectronico a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	width: 63px;
+	height: 63px;
+	margin: auto;
+	background: url(../img/servicios/correoelectronico.png);
+	text-decoration: none;
+	background-position: 0 -62px;
+}
+#correoElectronico a:hover {
+	background-position: 0 1px;
+	background-repeat: no-repeat
+}
+/*Buzón de Trasparencia*/
+#BuzónTrasparencia {
+	width: 80px;
+	text-align: center;
+}
+#BuzónTrasparencia a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	width: 63px;
+	height: 63px;
+	margin: auto;
+	background: url(../img/servicios/buzon.png);
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: -1px -62px;
+}
+#BuzónTrasparencia a:hover {
+	background-position:  0px 1px;
+	background-repeat: no-repeat
+}
+/*Línea Telefónica de Trasparencia*/
+#telTrasparencia {
+	width: 80px;
+	text-align: center;
+}
+#telTrasparencia a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	width: 63px;
+	height: 63px;
+	margin: auto;
+	background: url(../img/servicios/telefono.png);
+	text-decoration: none;
+	background-position: 0 -63px;
+}
+#telTrasparencia a:hover {
+	background-position: 0 1px;
+	background-repeat: no-repeat
+}
+/*Candidatos*/
+#candidato {
+	width: 80px;
+	text-align: center;
+}
+#candidato a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	width: 63px;
+	height: 63px;
+	margin: auto;
+	background: url(../img/servicios/candidatos.png);
+	text-decoration: none;
+	background-position: 0 -63px;
+}
+#candidato a:hover {
+	background-position: 0 1px;
+	background-repeat: no-repeat
+}
+/*Empresa*/
+#empresa {
+	width: 80px;
+	text-align: center;
+}
+#empresa a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	width: 63px;
+	height: 63px;
+	margin: auto;
+	background: url(../img/servicios/empresa.png);
+	text-decoration: none;
+	background-position: 0 -63px;
+}
+#empresa a:hover {
+	background-position: 0 1px;
+	background-repeat: no-repeat
+}
+/*...End portafolio...*/
+
+/*------------------------------------*\
+    Intranet 
+\*------------------------------------*/
+
+/*sharepoint*/
+#sharepoint {
+	width: 80px;
+	text-align: center;
+}
+#sharepoint a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	width: 63px;
+	height: 63px;
+	margin: auto;
+	background: url(../img/servicios/sharepoint.png);
+	text-decoration: none;
+	background-position: 0 -63px;
+}
+#sharepoint a:hover {
+	background-position: 0 1px;
+	background-repeat: no-repeat
+}
+
+/*Office 365*/
+#office {
+	width: 80px;
+	text-align: center;
+}
+#office a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	width: 63px;
+	height: 60px;
+	margin: auto;
+	background: url(../img/servicios/office.png);
+	text-decoration: none;
+	background-position: 0 -65px;
+}
+#office a:hover {
+	background-position: 0 -2px;
+	background-repeat: no-repeat
+}
+/*surveymonkey*/
+#surveymonkey {
+	width: 80px;
+	text-align: center;
+}
+#surveymonkey a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	width: 63px;
+	height: 63px;
+	margin: auto;
+	background: url(../img/servicios/survey-monkey.png);
+	text-decoration: none;
+	background-position: 0 -63px;
+}
+#surveymonkey a:hover {
+	background-position: 0 0px;
+	background-repeat: no-repeat
+}
+
+/*CRM*/
+#CRM {
+	width: 80px;
+	text-align: center;
+}
+#CRM a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	width: 63px;
+	height: 63px;
+	margin: auto;
+	background: url(../img/servicios/crm.png);
+	text-decoration: none;
+	background-position: 0 -63px;
+}
+#CRM a:hover {
+	background-position: 0 1px;
+	background-repeat: no-repeat
+}
+
+/*sociometria*/
+#sociometria {
+	width: 80px;
+	text-align: center;
+}
+#sociometria a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	width: 63px;
+	height: 63px;
+	margin: auto;
+	background:url(../img/servicios/sociometria.png);
+	text-decoration: none;
+	background-position: 0 -63px;
+}
+#sociometria a:hover {
+	background-position: 0 1px;
+	background-repeat: no-repeat
+}
+/*...Fin Intranet...*/
+
+
+/*...................Monterrey 100.......................*/
+
+/*mercadoReferencia*/
+#mercadoReferencia {
+	width: 80px;
+	text-align: center;
+}
+#mercadoReferencia a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	width: 63px;
+	height: 63px;
+	margin: auto;
+	background:url(../img/servicios/mercadoref.png);
+	text-decoration: none;
+	background-position: 0 -63px;
+	background-repeat: no-repeat
+}
+#mercadoReferencia a:hover {
+	background-position: 0 0px;
+	
+}
+
+/*Demos de estudio*/
+#demos {
+	width: 80px;
+	text-align: center;
+}
+#demos a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	width: 63px;
+	height: 63px;
+	margin: auto;
+	background:url(../img/servicios/ejemplos.png);
+	text-decoration: none;
+	background-position: 0 -62px;
+	background-repeat: no-repeat
+}
+#demos a:hover {
+	background-position: 0 0px;
+	
+}
+
+/*Download Pf Mty100*/
+#icono_pdf {
+	width: 80px;
+	text-align: center;
+}
+#icono_pdf a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	width: 63px;
+	height: 63px;
+	margin: auto;
+	background:url(../img/servicios/download.png);
+	text-decoration: none;
+	background-position: 0 -64px;
+	background-repeat: no-repeat
+}
+#icono_pdf a:hover {
+	background-position: 0 0px;
+	
+}
+
+/*Que es Monterrey 100*/
+#icono_pregunta {
+	width: 80px;
+	text-align: center;
+}
+#icono_pregunta a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	width: 63px;
+	height: 63px;
+	margin: auto;
+	background:url(../img/servicios/mty100quees.png);
+	text-decoration: none;
+	background-position: 0 -62px;
+	background-repeat: no-repeat
+}
+#icono_pregunta a:hover {
+	background-position: 0 2px;
+	
+}
+
+/*Midas*/
+#midas {
+	width: 80px;
+	text-align: center;
+}
+#midas a {
+	outline: none;/* get rid of dotted borders in Firefox */
+	display: block;
+	width: 63px;
+	height: 63px;
+	margin: auto;
+	background:url(../img/midas_logo.png);
+	text-decoration: none;
+	background-position: 0  0px;
+}
+#midas a:hover {
+	background-position: 0 0px;
+	background-repeat: no-repeat
+}
+
+}

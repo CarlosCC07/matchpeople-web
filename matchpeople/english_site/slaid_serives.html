@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<!--java script general-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="slick/slick.css">
+<link href="css/carrucel.css" rel="stylesheet" type="text/css">
+<script src="slick/slick.js"></script>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body style="margin:0; padding:0;">
+<div id="section-1">
+  <div id="banner">
+    <div class="item">
+      <div class="bg_color">
+        <div class="Titulo_chart">Tooling Corrective Mechanic</div>
+        <div class="bg_chart" style="background-image:url(img/graficas_tecnico.png); "></div>
+      </div>
+      <img src="img/tecnico.jpg" /> </div>
+    <div class="item">
+      <div class="bg_color">
+        <div class="Titulo_chart">Machine Operator </div>
+        <div class="bg_chart" style="background-image:url(img/graficas_producion.png);"></div>
+      </div>
+      <img src="img/producion.jpg" /> </div>
+    <div class="item">
+      <div class="bg_color">
+        <div class="Titulo_chart">Maintenance Mechanic</div>
+        <div class="bg_chart" style="background-image:url(img/graficas_instrumentista.png);"></div>
+      </div>
+      <img src="img/instrumentista.jpg" /> </div>
+    <div class="item">
+      <div class="bg_color">
+        <div class="Titulo_chart">Forklift Driver </div>
+        <div class="bg_chart" style="background-image:url(img/graficas_montacargas.png); "></div>
+      </div>
+      <img src="img/montacargista.jpg" /> </div>
+  </div>
+</div>
+</body>
+<script>
+	$(document).ready(function() {
+		$('#banner').slick({
+			dots: true,
+			infinite: true,
+			speed: 500,
+			fade: true,
+			cssEase: 'linear',
+			autoplay: true,
+ 			autoplaySpeed: 5000,
+ 			prevArrow: '<div style="position: absolute; top: 40%; left: 0px;" class="flecha flecha-izq table-wrapper"><div class="cell-wrapper"><div></div></div></div>',
+			nextArrow: '<div style="position: absolute; top: 40%; right:0px;" class="flecha flecha-der table-wrapper"><div class="cell-wrapper"><div></div></div></div>'
+		});
+	});
+</script>
+</html>

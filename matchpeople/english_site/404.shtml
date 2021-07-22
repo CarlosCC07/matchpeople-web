@@ -1,0 +1,369 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="consultoria de recursos humanos " />
+<meta name="keywords" content="Consultoria, clima organizacional, compensaciones, coba, reclutamiento,capital humano" />
+<title>Match People</title>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
+<link href="http://i1284.photobucket.com/albums/a569/Matchpeople/Mpicon_zpsda6b1e04.jpg" type="image/x-icon" rel="shortcut icon" />
+<link href="css/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="css/espacios.css" rel="stylesheet" type="text/css">
+<link href="css/texto.css" rel="stylesheet" type="text/css">
+<link href="css/iconos.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css'/>
+<link href="css/menu.css" rel="stylesheet" type="text/css">
+<link href="css/carrucel.css" rel="stylesheet" type="text/css">
+<!--Css para el carrucel de esutuios -->
+<link rel="stylesheet" type="text/css" href="css/estudios.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css" media="all" />
+<!--Css para los tabs -->
+<link type="text/css" rel="stylesheet" href="css/easy-responsive-tabs.css" />
+<link rel="stylesheet" type="text/css" href="css/forms.css">
+<link rel="stylesheet" type="text/css" href="css/footer.css">
+
+<!--java para tabs de esutuios -->
+<script type="text/javascript" src="js/modernizr.custom.04022.js"></script>
+<!--Css para el carrucel de esutuios -->
+<script src="js/respond.min.js"></script>
+<style type='text/css'>
+	  
+	 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{font-family:"HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;font-weight:normal;line-height:1.1;color:#333}h1 small,h2 small,h3 small,h4 small,h5 small,h6 small,.h1 small,.h2 small,.h3 small,.h4 small,.h5 small,.h6 small{font-weight:normal;line-height:1}
+      h1,.h1{font-size:45px;line-height:48px}
+      h2,.h2{font-size:36px;line-height:42px}
+      h3,.h3{font-size:28px;line-height:36px}
+      h4,.h4{font-size:24px;line-height:25px; padding-left:2%}
+      h5,.h5{font-size:20px;line-height:24px}
+      h6,.h6{font-size:18px;line-height:24px}
+
+      a{color:#3282e6;}
+      a:hover,a:focus{color:#165db5;text-decoration:underline}
+</style>
+</head>
+
+<body>
+<header id="cabezera">
+  <div class="formulario">
+    <h3 style="margin-left:15px">Contactanos</h3>
+    <div id="leyendaInfo"> Rellene el formulario de la derecha y un representante se pondrá en contacto con usted con más información. </div>
+    <form id="form1" >
+      <ul>
+        <li>
+          <input type="text" placeholder="Nombre">
+        </li>
+        <li>
+          <input type="text" placeholder="Compañia">
+        </li>
+        <li>
+          <input type="email" placeholder="E-mail">
+        </li>
+        <li>
+          <input type="tel" placeholder="Telefono">
+        </li>
+        <li>
+          <select>
+            <option value="Consultoría Estratégica en Capital Humano">Consultoría Estratégica en Capital Humano</option>
+            <option value="Organización y Compensaciones">Organización y Compensaciones</option>
+            <option value="Outsourcing">Outsourcing</option>
+            <option value="9 Block Competencias y Resultado">9 Block Competencias y Resultado</option>
+            <option value="Multiperceptual 360º">Multiperceptual 360º</option>
+            <option value="Clima organizacional">Clima organizacional</option>
+            <option value="Balance y Equidad Organizacional">Balance y Equidad Organizacional</option>
+            <option value="Vinculación de talento">Vinculación de talento</option>
+            <option value="Assessment Center">Assessment Center</option>
+            <option value="APP's">APP's</option>
+            <option value="Principios Organizacionales">Principios Organizacionales</option>
+            <option value="FeedBack">FeedBack</option>
+            <option value="Sociometría">Sociometría</option>
+            <option value="Estudio de Pilotos">Estudio de Pilotos</option>
+            <option value="Monterrey 100">Monterrey 100</option>
+            <option value="Centros de Investigación">Centros de Investigación</option>
+            <option value="Estudio de IT">Estudio de IT</option>
+            <option value="Comercial">Comercial</option>
+          </select>
+        </li>
+      </ul>
+      <br>
+      <input type="submit" class="btn3" value="Enviar">
+    </form>
+  </div>
+  <div class="Btn_contacto">
+    <button id="btn4">Solicite Información</button>
+  </div>
+  <div id="logo">
+    <ul>
+      <li>
+        <div id="icono"><a href="index.php" target="_self"><img src="img/icono.png"></a></div>
+      </li>
+      <li>
+        <div id="logomatch"><a href="index.php" target="_self"><img src="img/logoMatchpeople.png"></a></div>
+      </li>
+    </ul>
+  </div>
+  <nav id="nav" class="nav">
+    <ul class="nav-list">
+      <li class="nav-item"><a href="index.php">Inicio</a></li>
+      <li class="nav-item"><a href="quienessomos.php">Quiénes Somos</a></li>
+      <li class="nav-item"><a href="servicios.php">Servicios</a>
+        <ul class="nav-submenu">
+          <li class="nav-submenu-item"><a href="portafolio.php">Portafolio</a>
+            <ul class="nav-lastmenu" >
+              <li class="nav-lastmenu-item"><a href="consultoria.php">Consultoría Estratégica en Capital Humano</a></li>
+              <li class="nav-lastmenu-item"><a href="compensaciones.php">Organización y Compensaciones</a></li>
+              <li class="nav-lastmenu-item"><a href="outsourcing.php">Outsourcing</a></li>
+              <li class="nav-lastmenu-item"><a href="9block.php">9 Block Competencias y Resultados</a></li>
+              <li class="nav-lastmenu-item"><a href="multiperceptual.php">Multiperceptual 360º</a></li>
+              <li class="nav-lastmenu-item"><a href="clima.php">Clima organizacional</a></li>
+              <li class="nav-lastmenu-item"><a href="balance.php">Balance y Equidad Organizacional</a></li>
+              <li class="nav-lastmenu-item"><a href="vinculacion.php">Vinculación de talento</a></li>
+            </ul>
+          </li>
+          <li class="nav-submenu-item"><a  href="suiterh.php">Suite RH</a>
+            <ul class="nav-lastmenu">
+              <li class="nav-lastmenu-item"><a href="sensing/bienvenida.php" target="_new">Sociometría</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-submenu-item"><a href="voxxpeople.php">VoxXPeople</a>
+            <ul class="nav-lastmenu">
+              <li class="nav-lastmenu-item"><a href="contingencias.php">01 800 Contingencias</a></li>
+              <li class="nav-lastmenu-item"><a href="entrevistadesalida.php">Entrevista de Salida</a></li>
+            </ul>
+          </li>
+          <li class="nav-submenu-item"><a  href="centro.php">Centro de Evaluación</a>
+            <ul class="nav-lastmenu">
+              <li class="nav-lastmenu-item"><a href="assesmentcenter.php">Assessment Center</a></li>
+              <li class="nav-lastmenu-item"><a href="apps.php">APP's</a></li>
+              <li class="nav-lastmenu-item"><a href="principiosOr.php">Principios Organizacionales</a></li>
+              <li class="nav-lastmenu-item"><a href="feedback.php">FeedBack</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li  class="nav-item"><a href="estudios_nicho.php">Estudios Nicho</a>
+        <ul class="nav-submenu">
+          <li class="nav-submenu-item"><a href="pilotos.php">Estudio de Pilotos</a></li>
+          <li class="nav-submenu-item"><a href="mtycien.php">Monterrey 100</a></li>
+          <li class="nav-submenu-item"><a href="centrosInvestigacion.php">Centros de Investigación</a></li>
+          <li class="nav-submenu-item"><a href="estudiosit.php">Estudio de IT</a></li>
+          <li class="nav-submenu-item"><a href="comercial.php">Comercial</a></li>
+        </ul>
+      </li>
+      <li  class="nav-item"><a href="codigo.php">Código de Ética</a>
+        <ul class="nav-submenu">
+          <li class="nav-submenu-item"><a href="correoelectronico.php">Correo Electrónico</a></li>
+          <li class="nav-submenu-item"><a href="buzon.php">Buzón de Transparencia</a></li>
+        </ul>
+      </li>
+      <li  class="nav-item"><a href="contactanos.php">Contáctanos</a></li>
+      <li  class="nav-item"><a href="talentpool.php">Talentpool</a>
+ 	  <!--<ul class="nav-submenu">
+          <li class="nav-submenu-item"><a href="construcion.php" target="_new">Candidatos</a></li>
+          <li class="nav-submenu-item"><a href="construcion.php"  target="_new">Empresas</a></li>
+        </ul>-->
+      </li>
+    </ul>
+  </nav>
+</header>
+<div id="contenido">
+<div class="imgproduct gap2">
+    <div id="imgBox"> <img src="img/sorry.jpg" class="noventa" > </div>
+  </div>
+  <div class="text gap1">
+    
+                <h1 class="Titulosec">
+                404: Page Not Found
+            </h1>
+            <h4>
+                The page you.re looking for isn't here.<br /><br />
+                <a href="#" onclick='redirectToHomePage();'>Home page</a>
+            </h4>
+        </div>
+    </div>
+    
+  
+
+<div id="pie">
+  <hr>
+  <div id="subNav">
+    <h5 class="tituloSubnav">Menú</h5>
+    <ul class="colOne" >
+      <li><a href="index.php" target="_self">Inicio</a></li>
+      <li><a href="servicios.php" target="_self">Servicios</a></li>
+      <li><a href="contactanos.php" target="_self">Contactos</a></li>
+      <li ><a href="codigo.php">Código de Ética</a></li>
+    </ul>
+    <ul class="colTwo">
+      <li><a href="talentpool.php" target="_self">TalentPool</a></li>
+      <li><a href="intranet.php" target="_self">Intranet</a></li>
+      <li><a href="descargas.php" target="_self">Descargas</a></li>
+      <li><a href="Aviso.pdf" target="_new">Aviso de Privacidad</a></li>
+    </ul>
+  </div>
+  <div id="RedesSociales">
+    <h5 class="tituloSubnav" >Redes Sociales</h5>
+    <ul class="colOne">
+      <li>
+        <div id="facebook"><a href="http://www.facebook.com/pages/Matchpeople/138678919477097" target="_new">Facebook</a></div>
+      </li>
+      <li>
+        <div id="twitter"><a href="https://twitter.com/MatchPeople" target="_new">Twitter</a></div>
+      </li>
+      <li>
+        <div id="linkedin"><a href="http://www.linkedin.com/company/match-people" target="_new">Linkedin</a></div>
+      </li>
+      <li>
+        <div id="googleplus"><a href="https://plus.google.com/u/0/108438838286769020984/posts" target="_new">Google Plus</a></div>
+      </li>
+    </ul>
+  </div>
+  <div id="newsletter">
+  
+  <h5 class="tituloSubnav">Subscríbete  Newsletter</h5>
+  <form action="news.php"  method="post" name="form-news" >
+	<div class="notaform" data-helper="Introduce tu correo electronico">
+    <input type="email" name="email_news" id="email" class="required email" title="Introduce tu correo electrónico" placeholder="tu@email.com">
+    </div>
+    <div class="submit notaform" >
+      <input type="submit"  class="btn2" value="Enviar">
+    </div>
+
+    </form>
+  </div>
+  <div id="idioma">
+    <h5 class="tituloSubnav">Idioma</h5>
+    <ul class="colOne">
+      <li>
+        <div id="espanolActivo"><a href="index.php" target="_self">Español</a></div>
+      </li>
+      <li>
+        <div id="ingles"><a href="index2.php" target="_self">English</a></div>
+      </li>
+    </ul>
+  </div>
+</div>
+<!--java script general--> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+
+<!--java script para fondo de imagenes-->
+<script src="js/background.js"></script>
+  
+<!-- java scrip del carrucuel --> 
+<script type="text/javascript" src="js/jquery.eislideshow.js"></script> 
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script> 
+<script type="text/javascript">
+            $(function() {
+                $('#ei-slider').eislideshow({
+					animation			: 'center',
+					autoplay			: true,
+					slideshow_interval	: 6000,
+					titlesFactor		: 0
+                });
+            });
+        </script> 
+<!--Fin de java scrip del carrucuel --> 
+
+<!--java script del menu--> 
+<script type="text/javascript" src="js/flaunt.js"></script> 
+<!-- Fin de java script del menu--> 
+
+<!--java carrucel de los estudios--> 
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script> 
+<script type="text/javascript" src="js/jquery.contentcarousel.js"></script> 
+<script type="text/javascript">
+			$('#ca-container').contentcarousel();
+</script> 
+<!-- Fin carrucel de los estudios--> 
+
+<!--java script despliega los serviciso principales --> 
+<script>
+$(document).ready(function(){
+	
+  // despliega la nav-rapida(servicos principales)
+  $(".displayTitle").click(function(){
+	  // despliega los elemenos con la clase displaytext
+    $(".displaytext").toggleClass('displaytext-line');
+  });
+  
+});
+</script> 
+<!-- Fin java script despliega los serviciso principales --> 
+
+<!--java script despliega la sec de estudios en version movil --> 
+<script>
+$(document).ready(function(){
+  // despliega los estudios en version movil
+  $(".displayEstudios").click(function(){
+	  // despliega los elemenos con la clase estudios-movil-ul
+    $(".estudios-movil-ul").toggleClass("display");
+  });
+});
+</script> 
+<!--Fin java script despliega la sec de estudios en version movil --> 
+
+<!-- java scrip del formulario superior --> 
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $('.formulario').toggleClass('display');
+  });
+});
+</script> 
+<!--Fin de java scrip del formulario superior --> 
+
+<!--java scrips para los tabs de los estudios permite adaptavilidad en movil --> 
+    <script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $('#horizontalTab').easyResponsiveTabs({
+            type: 'default', //Types: default, vertical, accordion           
+            width: 'auto', //auto or any width like 600px
+            fit: true,   // 100% fit in a container
+            closed: 'accordion', // Start closed if in accordion view
+            activate: function(event) { // Callback function if tab is switched
+                var $tab = $(this);
+                var $info = $('#tabInfo');
+                var $name = $('span', $info);
+
+                $name.text($tab.text());
+
+                $info.show();
+            }
+        });
+    });
+</script>
+<!--Fin de java scrips para los tabs de los estudios permite adaptavilidad en movil --> 
+
+<!--java scrips para validar formularios --> 
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script> 
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/localization/messages_es.js "></script> 
+<script type="text/javascript" src="js/validador.js"></script>
+
+<!-- java scrip para poner el footer al fondo / calcula las dimenciones de la pagina --> 
+<script type="text/javascript">//<![CDATA[ 
+$(window).load(function(){
+$('#pie').css('margin-top',$(document).height() - ($('#cabezera').height() + $('#contenido').height() + $('.background').height() ) - $('#pie').height());
+});//]]>  
+</script>
+
+<!-- Google Analitics --> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53606422-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

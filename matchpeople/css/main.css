@@ -1,0 +1,347 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {	width: 100%;}
+.oculto {	display: none !important;}
+#imgBox {	width: 100%;	text-align: center}
+
+.referencia_map{width:100%; display: inline-block;}
+.btn_mercadoReferencia {
+	width: 100%;
+	text-align: center;
+  font-weight:bold;
+	margin-right: 10px;
+	margin-top: 10px;
+	color: #FFF;
+	margin: 5px;
+	padding: 6px 10px;
+	background-color: #900;
+	border: 0px;
+	-moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+.lista_mercadoReferencia {
+	font-weight: bold;
+	font-size: 15px;
+	max-height: 150px;
+  overflow: auto;
+	width: 100%;
+}
+#Monterrey_lista,#San_Nicolas_lista,#escobedo_lista, #cienga_de_flores_lista, #salinasvictoria_lista, #Santa_catarina_lista,
+#garcia_lista, #saltillo_lista, #pesqueria_lista, #apodaca_lista,#guadalupe_lista,#carmen_lista,#San_Paedro_lista {display: none;}
+
+.mercadoA {fill: #14b1bb !important;}
+.mercadoB {fill: #8649B8 !important;}
+.mercadoC {fill: #CFC317 !important;}
+.mercadoD {fill: #4874C3 !important;}
+.mercadoE {fill: #377B01 !important;}
+.svg-menu{margin: 0 auto;}
+.svg-menu__path__seleccion, .svg-menu__path__seleccion *,
+.svg-menu__path__seleccionB, .svg-menu__path__seleccionC, .svg-menu__path__seleccionD, .svg-menu__path__seleccionE
+{
+  transition: all 0.25s ease-out;
+}
+.svg-menu__path__seleccion__text *{
+  font-family: arial;
+  text-transform: uppercase;
+}
+.svg-menu__path__seleccion .svg-menu__path__seleccionB .svg-menu__path__seleccionC .svg-menu__path__seleccionD .svg-menu__path__seleccionE {
+  transform-origin: 5% 0%;
+}
+.svg-menu__path__seleccion:hover .svg-menu__path__seleccion__background *, .svg-menu__path__seleccion.active
+{  fill: #14b1bb;}
+.svg-menu__path__seleccionB:hover .svg-menu__path__seleccion__backgroundB *, .svg-menu__path__seleccionB.activeB .svg-menu__path__seleccion__backgroundB *
+{ fill: #8649B8;}
+.svg-menu__path__seleccionC:hover .svg-menu__path__seleccion__backgroundC *, .svg-menu__path__seleccionC.activeC .svg-menu__path__seleccion__backgroundC *
+{  fill: #CFC317;}
+.svg-menu__path__seleccionD:hover .svg-menu__path__seleccion__backgroundD *, .svg-menu__path__seleccionD.activeD .svg-menu__path__seleccion__backgroundD *
+{  fill: #4874C3;}
+.svg-menu__path__seleccionE:hover .svg-menu__path__seleccion__backgroundE *, .svg-menu__path__seleccionE.activeE .svg-menu__path__seleccion__backgroundE *
+{  fill: #377B01;}
+#mapMonterrey, #mapSannicolas, #MapRamos,#mapGarcia, #mapSantacatarina,#mapCienega,#mapEscobedo,#mapApodaca,#mapGuadalupe,#mapPesqueria,#mapSalinas,#mapCarmen, #mapSanpedro{
+  fill: #F18D82;
+}
+.box_mercardo{position: relative;}
+.text {	width: 100%;	display: inline-block;}
+#cabezera {
+	width: 100%;
+	background: url(../img/bgheader.jpg) repeat-x bottom;
+	box-shadow: 2px 2px 5px #999;
+   -webkit-box-shadow: 2px 2px 5px #999;
+  -moz-box-shadow: 2px 2px 5px #999;
+	display: inline-block;
+	background-color: #711210;
+}
+#contenido {	display: inline-block;	width: 100%;	margin-top: 0px;}
+.TsubmenuBg {
+	width: 100%;
+	background-color: #E9E9E9;
+	-moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	padding-top: 0;
+	margin-top: 0;
+}
+#Tsubmenu ul {	margin: 0px 0px 0px 0px;	padding: 0px}
+#Tsubmenu li {	margin: 0px;}
+#Tsubmenu {
+	width: 100%;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 15px
+}
+#regiones ul{	margin: 8px 0px; padding: 0 0 0 10px;}
+.Titulosec {	padding-bottom: 10px;	width: 95%;	margin: 0 auto;}
+.textInfo {
+	/*	background: #E8E8E8 url(../img/bg.jpg) repeat top left;*/
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 95%;
+	margin: 0 auto;
+}
+/*.textInfo ul {	margin: 0 0 0 0;	padding: 0 0 0 2%;}*/
+.textInfo h3 {
+	padding: 0 0 0 2%;
+	display: inline-block;
+}
+.textInfo h4 {	padding: 5px 0px 0 2%;}
+.textInfo p {
+	padding: 0 0 0 2%;
+	display: inline-block;
+}
+.textInfo ul li {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	width: 95%;
+	display: inline-block;
+}
+
+ul.bullets{ margin:0px;}
+.bullets li {
+	display: list-item !important;
+}
+.bullets li::before {
+  content: "\2022";
+  color: #c70000;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.bullets2 li:before {
+content: "• ";
+	color: #333;
+}
+
+.textInfo a {	text-decoration: none;}
+.desServico {
+	float: left;
+	display: block;
+	width: 80%;
+	margin-left: 6px;
+}
+
+.noventaMain {	width: 90%;	display: none;}
+.title_li {
+	border-bottom: medium solid rgba(189,188,188,1.00);
+	width: 100%;
+	text-indent: 5px;
+	display: block;
+}
+#tiposdeestudios{ display:inline-block; width:100%}
+#tiposdeestudios ul { float:left; width:40%; margin:0; }
+#tiposdeindustria li {float:left; margin:0  10px 0  0 ;   width: auto;}
+.dashed{border-bottom:thin dashed rgba(208,203,203,1.00);}
+.dashed img{ width:20px; height:auto;}
+.border-left{ border-left:rgba(208,203,203,1.00) solid medium;}
+.border-bottom{ border-bottom:rgba(208,203,203,1.00) solid medium;}
+.blue{ color:#069 !important}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+@media only screen and (min-width: 482px) {
+#cabezera {	padding-bottom: 0;	margin-bottom: 0;}
+#contenido {	display: inline-block;	width: 100%;	margin-top: 0px;}
+#serviciosPrincipales { display: inline-block;}
+#serviciosPrincipales ul {	margin: 0px auto;	padding: 0px;	display: inline-block;}
+#serviciosPrincipales ul li {	float: left;	margin: 15px;}
+.hide_tablet {display: none;}
+.zeroMargin_tablet {	margin-left: 0;}
+#Tsubmenu ul {float: left;	margin: 0px 0px 0px 25px;	padding: 0px}
+#Tsubmenu li {	float: left;	margin: 8px;}
+#Tsubmenu {	width: 90%;	display: inline-block; font-weight: bold;	margin: 5px 0px 0px 10px;	font-size: 14px;}
+.Titulosec { padding-bottom: 10px;	padding-left: 0;}
+.textInfo {	padding-top: 10px;	padding-bottom: 10px;}
+.noventaMain {display: none;}
+.btn_mercadoReferencia {
+	width: 100%;
+	text-align: center;
+  font-weight:bold;
+	margin-right: 10px;
+	margin-top: 10px;
+	color: #FFF;
+	margin: 5px;
+	padding: 6px 10px;
+	background-color: #900;
+	border: 0px;
+	-moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+.lista_mercadoReferencia {
+	font-weight: bold;
+	font-size: 15px;
+	max-height: 150px;
+  overflow: auto;
+	width: 100%;
+}
+.box_mercardo{position: relative;}
+}
+
+/* Desktop Layout: 769px to a max of 1232px. Desktop */
+@media only screen and (min-width: 769px) {
+.noventaMain {	width: 90%;	display: block;}
+#cabezera {}
+#contenido {
+	display: inline-block;
+	width: 100%;
+	margin-top: 0px;
+}
+#serviciosPrincipales {
+	clear: both;
+	display: block;
+	margin: auto;
+}
+#serviciosPrincipales ul {	margin: 0px;	padding: 0px;}
+#serviciosPrincipales ul li {	float: left;	margin: 15px 15px 5px 15px;}
+.text {
+	width: 55%;
+	float: left;
+	margin-left: 15px;
+	display: inline-block;
+}
+.imgproduct {
+	display: block;
+	width: 35%;
+	float: left;
+	margin-left: 15px;
+}
+#Tsubmenu ul {
+	float: left;
+	margin: 0px 0px 0px 25px;
+	padding: 0px
+}
+#Tsubmenu li {float: left;	margin: 8px;}
+#Tsubmenu {
+	width: 90%;
+	display: inline-block;
+	font-weight: bold;
+	margin: 5px 0px 0px 10px;
+	font-size: 14px
+}
+.TsubmenuBg {	padding-top: 0;	margin-top: 0;}
+.Titulosec {
+	padding-bottom: 10px;
+	padding-left: 2%;
+	width: 100%;
+	margin: 0 0 0 0;
+}
+.textInfo {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+	margin: 0;
+}
+.lista_mercadoReferencia {max-height: 150px;}
+.referencia_map{width:100%; float:left}
+.btn_mercadoReferencia {
+	width: 300px;
+	text-align: center;
+  font-weight:bold;
+	margin-right: 10px;
+	margin-top: 10px;
+	color: #FFF;
+	margin: 5px;
+	padding: 6px 10px;
+	background-color: #900;
+	border: 0px;
+	-moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+.box_mercardo{position: absolute; right:5px;}
+}
+.headline { font-style: normal; color: #000; text-align: left; font-size: 1.4em;}
+.text-wrapper a { color: #000; text-decoration: none;}
+.text-wrapperDes a { text-decoration: none;}
+a:hover .headline {  color: #820403;}
+.item {
+    display: block;
+    margin: 1%;
+    width: 20%;
+    padding: 15px;
+    justify-content: space-between;
+}
+.item:hover{
+  -webkit-box-shadow: 0px 5px 24px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 5px 24px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 5px 24px 0px rgba(0,0,0,0.5);
+}
+
+h3 {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.ei-slider {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    margin: 0;
+}
+.ei {
+  left: 3%;
+  bottom: 10%;
+  background-color: rgb(255, 255, 255, 0.8);
+  width: 40%;
+  position: absolute;
+  padding: 30px;
+}
+.ei a{ text-decoration: none; color: #313838;}
+.ei a:hover{ color: #820403;}
+.image{ width: 100%; background-color: #333; height: auto;}
+.wrapper {max-width: 90%;  margin-left: auto;  margin-right: auto;}
+.block-list { display: flex; flex-wrap: wrap;}
+.eyebrow{ font-size: .875rem; margin-top: 2%; margin-bottom: 2%; font-weight:bold; color: darkgrey;}
+.text-s {text-align: justify;}
+.descriptionDes{ font-size: 1.4em; line-height: 1.3em;}
+.imageDes{ width: 47%; display: block; margin: 15px 15px !important; padding: 0px; float: left;}
+.text-wrapperDes{margin: 15px; float: left; width: 45%; text-align: justify;}
+.text-wrapperDes h1{text-align: left;}
+
+@media (max-width: 768px) {
+.imageDes{ width: 100%; display: block; margin: 15px 0px; padding: 0px; float: left;}
+.text-wrapperDes{margin: 0px 0px 15px 0px; float: left; width: 100%; text-align: justify;}
+.ei {left: 3%; bottom: 10%; background-color: rgb(255, 255, 255, 0.8); width: 80%; position: absolute; padding: 30px;}
+.item { display: block; margin: 1%;  width: 90%;  padding: 15px;  justify-content: space-between;}
+}
+
+@media only screen and (min-width: 970px) {
+	.lista_mercadoReferencia {	max-height: 250px;	}
+}
+/* Desktop Layout: 1200px. Desktop */
+@media only screen and (min-width: 1200px) {
+	.lista_mercadoReferencia {	max-height: 350px;	}
+}

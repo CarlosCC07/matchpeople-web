@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#SociosEstrategicos{ width:30%; padding-right:2%; height:350px;}
+#SociosEstrategicos h3 {color:#333}
+
+.boxLogoCliente{ width:100%;
+	margin:0 auto !important;
+	display:flex !important; flex-direction:row !important;
+	flex-wrap:wrap!important; justify-content:space-around !important;
+	align-items:baseline!important;
+	overflow: auto;
+    height: 320px;
+}
+.logosclientes{ width:42%; text-align:center}
+.logosclientes img { width:80%; padding:10px 0;}

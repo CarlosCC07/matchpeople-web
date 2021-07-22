@@ -1,0 +1,22 @@
+
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9' xmlns:xhtml='http://www.w3.org/1999/xhtml'>
+
+<url>
+  <loc>http://www.matchpeople.com/</loc>
+  <lastmod>20-08-27T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <xhtml:link rel='canonical' hreflang='es' href='http://www.matchpeople.com/.php' />
+</url>
+
+</urlset>
+
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9' xmlns:xhtml='http://www.w3.org/1999/xhtml'>
+
+<url>
+  <loc>http://www.matchpeople.com/</loc>
+  <lastmod>20-08-27T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <xhtml:link rel='canonical' hreflang='es' href='http://www.matchpeople.com/file.php' />
+</url>
+
+</urlset>

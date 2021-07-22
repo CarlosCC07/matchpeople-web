@@ -1,0 +1,75 @@
+.color_box{ height: 16px;
+  width: 16px;
+  display: block;
+  float: left;
+  margin-right: 5px;}
+
+#regiones{ font-size: 14px;
+    font-weight: bold;
+}
+
+/* background setup */
+.background {
+    background-repeat:no-repeat;
+    /* custom background-position */
+    background-position: 50% 15%;
+    /* ie8- graceful degradation */
+    background-position:50% 50%\9 !important;
+}
+
+.background2 {
+    background-repeat:no-repeat;
+    /* custom background-position */
+    background-position:top center;
+    /* ie8- graceful degradation */
+    background-position:50% 50%\9 !important;
+}
+
+/* fullscreen setup */
+html, body {
+    /* give this to all tags from html to .fullscreen */
+    height:100%;
+}
+.fullscreen,
+.content-a {
+    width:100%;
+    min-height:100%;
+}
+.not-fullscreen,
+.not-fullscreen .content-a,
+.fullscreen.not-overflow,
+.fullscreen.not-overflow .content-a {
+    height:100%;
+    overflow:hidden;
+}
+
+/* content centering styles */
+.content-a {
+	display:table;
+}
+.content-b {
+	display:table-cell;
+    position:relative;
+	vertical-align:middle;
+}
+
+/* visual styles */
+
+.not-fullscreen {
+    height:550px;
+}
+
+.fondoblanco{ background-color:rgba(255,255,255,0.8); padding:5px; border-radius:3px; }
+@media screen and (min-width: 831px) and (max-width: 1000px) {
+.not-fullscreen {  height:450px;}
+}
+
+@media screen and (min-width: 400px) and (max-width: 830px) {
+.not-fullscreen {  height: 350px;}
+.fondoblanco{/*	height: 340px; overflow:auto;*/}
+}
+
+@media screen and (max-width: 399px) {
+.not-fullscreen {    height: 280px;}
+.fondoblanco{/*	height:270px; overflow:auto;*/}
+}

@@ -1,0 +1,171 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.btn {
+	color: #FFF;
+	margin: 5px;
+	padding: 6px 10px;
+	background-color: #900;
+	border: 0px;
+	-moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	cursor: pointer;
+}
+.btn2 {
+	background-color: #292828;
+	color: #F3F1F1;
+	margin: 8px 0px 5px 0px;
+	font-weight: 800;
+	border: 0;
+	-moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+.btn3 {
+	color: #FFF;
+	margin: 0px 0px 10px 0px;
+	padding: 5px 10px;
+	font-weight: 900;
+	background-color: #900;
+	font-size: 14px;
+	border: 0px;
+	-moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	cursor: pointer
+}
+#btn4 {
+	background: #E8E8E8 url(../img/bg.jpg) repeat top left;
+	border: 0;
+	margin: 0;
+	padding: 5px;
+	width: 200px;
+	font-weight: 800;
+	-moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+.btn5 {
+	background-color: #292828;
+	color: #F3F1F1;
+	margin: 5px 0px 5px 0px;
+	padding: 8px;
+	border-radius: 4px;
+	font-weight: 800;
+	border: 0;
+	-moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	text-decoration: none;
+}
+.btn:hover {
+	color: #FFFFFF;
+	background: #333;
+}
+.btn2:hover {
+	color: #333;
+	background: #FFFFFF;
+}
+.btn3:hover {
+	color: #FFFFFF;
+	background: #333;
+}
+.btn5:hover {
+	color: #333;
+	background: #FFFFFF
+}
+.btn5:visited {
+	color: #FFFFFF;
+	background: #333
+}
+.btn-default {
+	width: auto !important;
+	border-radius: 4px;
+	padding: 1% 3% !important;
+	margin: 1% 1% 1% 0%;
+	font-weight: 800;
+	color: rgba(252,252,252,1.00);
+	background-color: rgba(148,148,148,1.00);
+	border-width: 4px !important;
+	text-decoration:none;
+}
+.btn-default:visited {
+	color: #FFFFFF;
+}
+.btn_Actualizar {
+	background-color: rgba(6,155,70,0.70);
+	border-color: rgba(6,155,70,1.00);
+	border-style: solid;
+}
+.btn_Actualizar:hover {
+	background-color: rgba(6,155,70,1.00);
+	border-color: rgba(6,155,70,1.00);
+	border-style: solid;
+}
+.btn_Eliminar {
+	background-color: rgba(152,0,2,0.70);
+	border-color: rgba(152,0,2,1.00);
+	border-style: solid;
+}
+.btn_Eliminar:hover {
+	background-color: rgba(152,0,2,1.00);
+	border-color: rgba(152,0,2,1.00);
+	border-style: solid;
+}
+.btn_Enviar {
+	text-decoration: none;
+	background-color: rgba(6,155,70,0.70);
+	border-color: rgba(6,155,70,1.00);
+	border-style: solid;
+	border-width: 5px;
+}
+.btn_Enviar:hover {
+	background-color: rgba(6,155,70,1.00);
+	border-color: rgba(6,155,70,1.00);
+	border-style: solid;
+}
+.btnSi {
+	background-color: rgba(6,155,70,0.70);
+	border-color: rgba(6,155,70,1.00);
+	border-style: solid;
+}
+.btnSi:hover {
+	background-color: rgba(6,155,70,1.00);
+	border-color: rgba(6,155,70,1.00);
+	border-style: solid;
+}
+.btnNo {
+	background-color: rgba(152,0,2,0.70);
+	border-color: rgba(152,0,2,1.00);
+	border-style: solid;
+}
+.btnNo:hover {
+	background-color: rgba(152,0,2,1.00);
+	border-color: rgba(152,0,2,1.00);
+	border-style: solid;
+}
+.btn_Img {
+	background-color: rgba(183,64,244,0.70);
+	border-color: rgba(183,64,244,1.00);
+	border-style: solid;
+}
+.btn_Img:hover {
+	background-color: rgba(183,64,244,1.00);
+	border-color: rgba(183,64,244,1.00);
+	border-style: solid;
+}
+.Btn_contacto {
+	display: block;
+	width: 200px;
+	background: #E8E8E8 url(../img/bg.jpg) repeat top left;
+	text-align: center;
+	padding: 0;
+	float: right;
+	font-weight: bold;
+	cursor: pointer;
+	margin: 0;
+}

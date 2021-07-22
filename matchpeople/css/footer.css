@@ -1,0 +1,209 @@
+@charset "UTF-8";
+/* CSS Document */
+#pie {
+	clear: both;
+	background: #E8E8E8 url(../img/bg.jpg) repeat top left;
+	width: 100%;
+	border-top: #666 solid 5px;
+}
+
+#pie li{
+list-style:none;
+}
+#subNav {
+	display: inline-block;
+	width: 90%;
+	margin: 10px 0 10px 10px;
+}
+#subNav li {
+	padding: 0;
+	margin: 0;
+
+}
+#subNav a {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	color: #474747;
+	/*padding: 10px;*/
+	font-size: 16px;
+	font-weight: 700;
+}
+#subNav a:hover {
+	color: #EF3C31;
+}
+.colOne {
+	float: left;
+	display: block;
+	margin: 2px 6px 0px 2px;
+	padding: 0;
+	width: 45%;
+}
+.colTwo {
+	float: left;
+	display: block;
+	margin: 2px 2px 0px 4px;
+	padding: 0;
+	width: 45%;
+}
+#RedesSociales {
+	display: block;
+	width: 45%;
+	float: left;
+	margin: 0 auto 10px 10px;
+
+}
+#RedesSociales a {
+	margin: 2px;
+	text-decoration: none;
+	color: #474747;
+	font-size: 16px;
+	font-weight: 700;
+}
+#RedesSociales a:hover {
+	color: #EF3C31;
+}
+#newsletter {
+	display:inline-block;
+	width: 90%;
+	margin: 0 auto 10px 10px;
+
+}
+#newsletter a {
+	padding: 10px;
+	font-size: 16px;
+}
+#idioma {
+	display: inline-block;
+	margin: 0 auto 10px 10px;
+	width:90%;
+
+}
+#idioma li {
+	float: left;
+}
+#idioma a {
+	text-decoration: none;
+	color: #474747;
+	padding: 10px;
+	font-size: 16px;
+	font-weight: 700;
+}
+#idioma a:hover {
+	color: #EF3C31;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+#pie {
+	width: 100%;
+	display: inline-block;
+}
+.colOne {
+	float: left;
+	display: block;
+	margin: 2px 6px 0px 2px;
+	padding: 0;
+	width: 45%;
+}
+.colTwo {
+	float: left;
+	display: block;
+	margin: 2px 2px 0px 4px;
+	padding: 0;
+	width: 45%;
+}
+#subNav {
+	display: block;
+	float: left;
+}
+#subNav a {
+	/*padding: 10px;*/
+	font-size: 16px;
+}
+#RedesSociales {
+	display: block;
+	float: left;
+}
+#RedesSociales a {
+	font-size: 16px;
+}
+#newsletter {
+	display: block;
+	width: 45%;
+	float: left;
+}
+#newsletter a {
+	padding: 10px;
+	font-size: 16px;
+}
+#idioma {
+	display: inline-block;
+	width: 90%;
+}
+#idioma a {
+	font-size: 16px;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+@media only screen and (min-width: 769px) {
+#pie {
+	width: 100%;
+	position: relative;
+	background: #E8E8E8 url(../img/bg.jpg) repeat top left;
+	display: inline-block;
+}
+#subNav {
+	float: left;
+	width: 24%;
+	display: block;
+	margin: 1%;
+}
+#subNav a {
+	font-size: 13px;
+	padding:0;
+}
+.colOne {
+	float: left;
+	display: block;
+	margin: 2px 6px 0px 2px;
+	padding: 0;
+	width: 40%;
+}
+.colTwo {
+	float: left;
+	display: block;
+	margin: 2px 2px 0px 4px;
+	padding: 0;
+	width: 40%;
+}
+#RedesSociales {
+	width: 24%;
+	float: left;
+	display: block;
+	margin: 1%;
+}
+#RedesSociales a {
+	font-size: 12px;
+}
+#newsletter {
+	display: block;
+	float: left;
+	width: 24%;
+	margin: 1%;
+}
+#newsletter a {
+	font-size: 12px;
+}
+#idioma {
+	display: block;
+	float: left;
+	width: 20%;
+	margin: 1%;
+}
+#idioma a {
+	font-size: 12px;
+}
+}
