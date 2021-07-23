@@ -1,12 +1,11 @@
 <?php
 /*
+//bd demo
+$servername = "db5003706329.hosting-data.io";
+$username = "dbu1034777";
+$password = "#M4tch-2013!bd";
+$dbname = "dbs3022170";
 
-
-//bd demo appetizer
-$servername = "db5000721685.hosting-data.io";
-$username = "dbu629228";
-$password = "3r1ck.G4#4pp!";
-$dbname = "dbs661010";
 
 //bd cliente
 $servername = "db5000451549.hosting-data.io";
@@ -19,7 +18,6 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "matchpeo_vacantesBD";
-
 
 
 ?>

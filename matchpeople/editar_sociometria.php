@@ -50,6 +50,7 @@ header('Location:login_vacante.php');
 			</script>
 	<?php }
 	else if ($accion == "ver encuestas"){	?>
+		<!-- muestro los empleados y si ya contestaron o no la encuesta -->
 		<!doctype html>
 		<html>
 		<head>
@@ -64,7 +65,10 @@ header('Location:login_vacante.php');
 			<?php include("menus/menu_vacantes.php");?>
 			<div class="titulosec" style="width: 95%;">
 				Listado de participantes
-				<?php include("menus/menu_sociometria.php");?>
+				<div class="alinearderecha ">
+				  <a href="sendEncuestaSociometria.php?id=1" class="btn5 ">Enviar Recordatorio</a>
+				  <a href="papeleria_sociometria.php" class="btn5 ">Papelería</a>
+				</div>
 			</div>
 			<table style="width:95%; margin:0 auto;" id="customers">
 			  <tr>
@@ -76,23 +80,25 @@ header('Location:login_vacante.php');
 					<th>Estatus</th>
 					<th>acciones</th>
 			  </tr>
-			<?php $consulta = "SELECT * FROM personal_sociometria where IdEmpresa  = $ide";
+			<?php $consulta = "SELECT personal_sociometria.IdPersonal, personal_sociometria.IdEmpresa, personal_sociometria.NumNomina,personal_sociometria.Nombre,
+			 personal_sociometria.Departamento, personal_sociometria.Puesto, personal_sociometria.Planta, personal_sociometria.Email, resencuesta_sociometria.IdEstatus
+			FROM personal_sociometria
+		   JOIN resencuesta_sociometria ON personal_sociometria.IdPersonal = resencuesta_sociometria.IdResEncuesta
+			where personal_sociometria.IdEmpresa = $ide";
+
 				 $resultV = mysqli_query($con, $consulta);
 				 if (mysqli_num_rows($resultV) > 0) {
 					 // output data of each row
 					 while($rowV = mysqli_fetch_assoc($resultV)) {
 						 $IdPersonal = $rowV['IdPersonal'];
-						 $IdEmpresa  = $rowV['IdEmpresa'];
+						 $IdEmpresa = $rowV['IdEmpresa'];
 						 $NumNomina = $rowV['NumNomina'];
 						 $Nombre = $rowV['Nombre'];
-						 $FechaIngreso = $rowV['FechaIngreso'];
 						 $Departamento = $rowV['Departamento'];
-						 $Clave = $rowV['Clave'];
 						 $Puesto = $rowV['Puesto'];
 						 $Planta = $rowV['Planta'];
-						 $Segmento = $rowV['Segmento'];
-						 $Turno= $rowV['Turno'];
 						 $Email= $rowV['Email'];
+						 $IdEstatus = $rowV['IdEstatus'];
 			?>
 			<tr>
 				<td><label><?php echo "$NumNomina";?></label></td>
@@ -100,7 +106,17 @@ header('Location:login_vacante.php');
 				<td><label><?php echo "$Puesto";?></label></td>
 		    <td><label><?php echo "$Departamento";?></label></td>
 				<td><label><?php echo "$Planta";?></label></td>
-				<td><label><?php echo "Estatus";?></label></td>
+				<td><label><?php switch ($IdEstatus) {
+					    case 1:
+					        echo "Sin responder";
+					        break;
+					    case 2:
+					        echo "En progresso";
+					        break;
+					    case 3:
+					        echo "Terminada";
+					        break;}?>
+				</label></td>
 				<td>
 					<form action="Admin_vacantes/updateEncuestaSociometria.php?id=<?php echo "$IdPersonal";?>" enctype="multipart/form-data" method="post" onSubmit="return validacion();">
 						<a class="btn2 adon" href="estudio_sociometria.php?id=<?php echo "$IdEmpresa:$IdPersonal";?>" target="_blank"> Ver encuesta</a>
@@ -154,7 +170,6 @@ header('Location:login_vacante.php');
 	<?php include("menus/menu_vacantes.php");?>
 	<div class="titulosec">Editar Encuesta</div>
 		<div class="box" >
-
 			<form <?php echo "action='Admin_vacantes/updateSociometria.php?id=".$rowV['IdEncuesta']."'";?> enctype="multipart/form-data" method="post" onSubmit="return validacion();" class="border-bottom">
 				<div class="gap3 cien">
 					<span class='bold'>Nombre del estudio: </span>
