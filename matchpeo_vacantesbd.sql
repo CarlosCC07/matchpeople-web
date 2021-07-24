@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 21-07-2021 a las 20:42:16
+-- Tiempo de generación: 24-07-2021 a las 05:56:11
 -- Versión del servidor: 10.4.14-MariaDB
 -- Versión de PHP: 7.4.9
 
@@ -226,7 +226,7 @@ CREATE TABLE `encuesta_sociometria` (
 
 INSERT INTO `encuesta_sociometria` (`IdEncuesta`, `IdEmpresa`, `Titulo`, `Fecha`, `act_formacion1`, `act_formacion2`, `Act_Ascendencia`, `Act_Afinidad`, `Act_Trabajo3`, `Act_Popularidad`, `Act_sociales2`, `Act_sociales3`, `Act_sociales4`, `porcentaje`, `estatusId`, `papeleria`) VALUES
 (1, 1, 'SEGURIDAD Y SALUD OCUPACIONAL', '2021-07-18', '   ¿Qué pláticas o cursos de Seguridad y Salud Ocupacional te gustaría recibir por parte de la empresa?', '   ¿Qué recomendaciones o sugerencias puedes comentar para lograr CERO accidentes?', '   Menciona a tres compañeros de la empresa a los que respetas porque te aconsejan adecuadamente en situaciones personales o relacionadas con el trabajo (No importa el puesto ni el área en que se encuentren).', '   Menciona a tres compañeros de la empresa a los que por su experiencia la mayoría les hace caso y con quienes te gustaría trabajar en equipos o comisiones de seguridad y salud (No importa el puesto ni el área en que se encuentren).', '   ¿Estás oportunamente comunicado sobre las campañas que organiza el área de Seguridad y Salud Ocupacional?   ', '   Escribe los nombres de tres compañeros de la empresa que son de trato agradable y gustan de organizar eventos y reuniones (No importa el puesto ni el área en que se encuentren).', '    ¿Cómo te sientes con las medidas de prevención que la empresa ha implementado ante la pandemia del COVID-19?', '   ¿Consideras que hay deficiencias o tienes alguna sugerencia para mejorar las medidas implementadas?', '  ¿Crees que la vacuna del COVID-19 es necesaria para disminuir el riesgo de contagio?  (SI / NO) ', 0, 1, 0),
-(2, 2, 'Encuesta Demo', '2021-07-18', '   act_formacion1.1', '   act_formacion2.1', '   act asendencia.1', '   act afinidad.1', '   act trabajo.1', '   Act populiaridad.1', '   act social2.1', '   act social 3.1', '', 0, 2, 0);
+(2, 2, 'Encuesta Demo', '2021-07-18', '   act_formacion1.1', '   act_formacion2.1', '   act asendencia.1', '   act afinidad.1', '   act trabajo.1', '   Act populiaridad.1', '   act social2.1', '   act social 3.1', '', 0, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -503,16 +503,19 @@ CREATE TABLE `personal_sociometria` (
   `FechaNacimiento` date NOT NULL,
   `Grupo` varchar(200) CHARACTER SET utf8 NOT NULL,
   `Email` varchar(200) CHARACTER SET utf8 NOT NULL,
-  `Contraseña` varchar(200) CHARACTER SET utf8 NOT NULL
+  `Contraseña` varchar(200) CHARACTER SET utf8 NOT NULL,
+  `ClaveTiempo` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `personal_sociometria`
 --
 
-INSERT INTO `personal_sociometria` (`IdPersonal`, `IdEmpresa`, `NumNomina`, `Nombre`, `FechaIngreso`, `Departamento`, `Clave`, `Puesto`, `Planta`, `Segmento`, `Turno`, `FechaNacimiento`, `Grupo`, `Email`, `Contraseña`) VALUES
-(1, 1, '14', 'Héctor Raúl Medina Heredia\r\n', '2021-07-01', 'Producción Polvos\r\n', 0, 'Coordinador de Jefes de Línea', '2', 'Administrativo', 'Fijo', '1995-02-12', '', 'demo@gmail.com', '1234'),
-(2, 1, '224', 'Óscar Roberto González Sierra ', '1976-09-02', 'Dirección', 0, 'Director de Operaciones', '2', 'Administrativo', 'Fijo', '1999-09-01', '', 'demo2@gmail.com', '1234');
+INSERT INTO `personal_sociometria` (`IdPersonal`, `IdEmpresa`, `NumNomina`, `Nombre`, `FechaIngreso`, `Departamento`, `Clave`, `Puesto`, `Planta`, `Segmento`, `Turno`, `FechaNacimiento`, `Grupo`, `Email`, `Contraseña`, `ClaveTiempo`) VALUES
+(1, 1, '14', 'Héctor Raúl Medina Heredia', '1995-11-27', 'Producción Polvos', 0, 'Coordinador de Jefes de Línea', '2', 'Administrativo', 'Fijo', '1976-09-02', '', 'hmedina@scanpaint.com', '1627007613', 1627007613),
+(2, 1, '224', 'Óscar Roberto  González Sierra ', '1999-09-01', 'Dirección', 0, 'Director de Operaciones', '2', 'Administrativo', 'Fijo', '1979-10-03', '', 'ogonzalez@scanpaint.com', '1627007613', 1627007613),
+(3, 1, '491', 'Sergio Ernesto García Ortega ', '2008-08-04', 'Producción Ecoat', 0, 'Coordinador de Jefes de Línea', '2', 'Administrativo', 'Fijo', '1974-10-01', '', 'sgarcia@scanpaint.com', '1627007613', 1627007613),
+(4, 1, '589', 'Jaime Eleazar Flores Castillo', '2002-07-22', 'Calidad', 0, 'Coordinador de Calidad', '2', 'Administrativo', 'Fijo', '1981-04-24', '', 'jflores@scanpaint.com', '1627007613', 1627007613);
 
 -- --------------------------------------------------------
 
@@ -547,15 +550,19 @@ CREATE TABLE `resencuesta_sociometria` (
   `Act_TrabajoR3` varchar(500) NOT NULL,
   `Act_socialesR2` varchar(500) NOT NULL,
   `Act_socialesR3` varchar(500) NOT NULL,
-  `Act_socialesR4` varchar(3) NOT NULL
+  `Act_socialesR4` varchar(3) NOT NULL,
+  `ClaveTiempo` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `resencuesta_sociometria`
 --
 
-INSERT INTO `resencuesta_sociometria` (`IdResEncuesta`, `IdEmpresa`, `IdPersonal`, `IdEncuesta`, `IdEstatus`, `Fecha`, `NumNomina`, `Nombre`, `Departamento`, `TRNombre_ascendencia1`, `TRNombre_ascendencia2`, `TRNombre_ascendencia3`, `TRNombre_afinidad1`, `TRNombre_afinidad2`, `TRNombre_afinidad3`, `TRNombre_popularidad1`, `TRNombre_popularidad2`, `TRNombre_popularidad3`, `act_formacionA`, `act_formacionB`, `act_formacionC`, `act_formacionR2`, `Act_TrabajoSN`, `Act_TrabajoR3`, `Act_socialesR2`, `Act_socialesR3`, `Act_socialesR4`) VALUES
-(1, 1, 1, 1, 1, '2021-07-20', '14', 'Héctor Raúl Medina Heredia', 'Producción Polvos', '', '', '', '', '', '', '', '', '', 'hola', '', '', '', '', '', '', '', '');
+INSERT INTO `resencuesta_sociometria` (`IdResEncuesta`, `IdEmpresa`, `IdPersonal`, `IdEncuesta`, `IdEstatus`, `Fecha`, `NumNomina`, `Nombre`, `Departamento`, `TRNombre_ascendencia1`, `TRNombre_ascendencia2`, `TRNombre_ascendencia3`, `TRNombre_afinidad1`, `TRNombre_afinidad2`, `TRNombre_afinidad3`, `TRNombre_popularidad1`, `TRNombre_popularidad2`, `TRNombre_popularidad3`, `act_formacionA`, `act_formacionB`, `act_formacionC`, `act_formacionR2`, `Act_TrabajoSN`, `Act_TrabajoR3`, `Act_socialesR2`, `Act_socialesR3`, `Act_socialesR4`, `ClaveTiempo`) VALUES
+(1, 1, 1, 1, 1, '2021-07-24', '14', 'Héctor Raúl Medina Heredia', 'Producción Polvos', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 1627007613),
+(2, 1, 2, 1, 1, '2021-07-24', '224', 'Óscar Roberto  González Sierra ', 'Dirección', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 1627007613),
+(3, 1, 3, 1, 1, '2021-07-24', '491', 'Sergio Ernesto García Ortega ', 'Producción Ecoat', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 1627007613),
+(4, 1, 4, 1, 1, '2021-07-24', '589', 'Jaime Eleazar Flores Castillo', 'Calidad', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 1627007613);
 
 -- --------------------------------------------------------
 
@@ -787,13 +794,13 @@ ALTER TABLE `logocliente`
 -- AUTO_INCREMENT de la tabla `personal_sociometria`
 --
 ALTER TABLE `personal_sociometria`
-  MODIFY `IdPersonal` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `IdPersonal` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=608;
 
 --
 -- AUTO_INCREMENT de la tabla `resencuesta_sociometria`
 --
 ALTER TABLE `resencuesta_sociometria`
-  MODIFY `IdResEncuesta` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `IdResEncuesta` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1212;
 
 --
 -- AUTO_INCREMENT de la tabla `si_no`
