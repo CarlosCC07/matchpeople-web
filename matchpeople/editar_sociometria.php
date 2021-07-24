@@ -118,8 +118,9 @@ header('Location:login_vacante.php');
 					        break;}?>
 				</label></td>
 				<td>
-					<form action="Admin_vacantes/updateEncuestaSociometria.php?id=<?php echo "$IdPersonal";?>" enctype="multipart/form-data" method="post" onSubmit="return validacion();">
+					<form action="editar_Personal.php?id=<?php echo "$IdPersonal";?>" enctype="multipart/form-data" method="post" onSubmit="return validacion();">
 						<a class="btn2 adon" href="estudio_sociometria.php?id=<?php echo "$IdEmpresa:$IdPersonal";?>" target="_blank"> Ver encuesta</a>
+						<input type='submit' class='btn2' name='btn_submit' value='Editar'>
 						<input type='submit' class='btn3' name='btn_submit' value='Eliminar'>
 					</form>
 				</td>

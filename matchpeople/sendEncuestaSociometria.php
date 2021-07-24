@@ -12,7 +12,7 @@ $ide = $_GET['id'];
 $consulta = "SELECT personal_sociometria.IdPersonal, personal_sociometria.IdEmpresa, personal_sociometria.Nombre, personal_sociometria.Email, resencuesta_sociometria.IdEstatus
 FROM personal_sociometria
 JOIN resencuesta_sociometria ON personal_sociometria.IdPersonal = resencuesta_sociometria.IdResEncuesta
-where personal_sociometria.IdEmpresa = $ide AND resencuesta_sociometria.IdEstatus != 3";
+where personal_sociometria.IdEmpresa = $ide AND resencuesta_sociometria.IdEstatus != 3 AND personal_sociometria.Email !='' ";
      $resultV = mysqli_query($con, $consulta);
      if (mysqli_num_rows($resultV) > 0) {
        // output data of each row
