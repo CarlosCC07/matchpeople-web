@@ -40,10 +40,12 @@ if(empty( $_SESSION ['user'])){ header('Location:login_vacante.php');}
 		<meta charset="UTF-8">
 		<title>Matchpeople - Editar Encuesta</title>
 		<?php include("header.php");?>
-		<style> .titulosec{width: 90%;}
+		<style>
+		.titulosec{width: 90%;}
 		.alert-danger {color: #721c24; background-color: #f8d7da; border-color: #f5c6cb;}
 		 .alert { position: relative; padding: .75rem 1.25rem; margin-bottom: 1rem; border: 1px solid transparent; border-radius: .25rem;}
 			.alert-success{color:#3c763d;background-color:#dff0d8;border-color:#d6e9c6}
+			#customers td, #customers th { border: 1px solid #dddddd; text-align: left; padding: 8px;}
 		</style>
 		<div id="contenido">
 			<?php include("menus/menu_vacantes.php");?>
@@ -86,7 +88,7 @@ if(empty( $_SESSION ['user'])){ header('Location:login_vacante.php');}
             //echo "$ClaveTiempo";
             ?>
             <div class="row">
-              <table class="table table-bordered" style="background: rgba(255,255,255,.60); width:100%;">
+              <table  id="customers" style="background: rgba(255,255,255,.60); width:100%;">
                 <thead>
                   <tr>
                     <th>Numero de Nomina</th>
