@@ -56,7 +56,7 @@
  FROM encuesta_sociometria
  INNER JOIN personal_sociometria ON encuesta_sociometria.IdEmpresa=personal_sociometria.IdEmpresa
  INNER JOIN resencuesta_sociometria ON encuesta_sociometria.IdEmpresa=resencuesta_sociometria.IdEmpresa
- where encuesta_sociometria.IdEmpresa = $Ide And encuesta_sociometria.estatusId = $estatus And personal_sociometria.IdPersonal = $IdEmpleado";
+ where encuesta_sociometria.IdEmpresa = $Ide And encuesta_sociometria.estatusId = $estatus And personal_sociometria.IdPersonal = $IdEmpleado limit 1";
 			$result = mysqli_query($con, $sql);
 			if (mysqli_num_rows($result) > 0) {
 				// output data of each row

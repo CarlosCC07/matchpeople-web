@@ -98,7 +98,8 @@ if(empty( $_SESSION ['user'])){ header('Location:login_vacante.php');}
                 </thead>
                 <tbody>
                   <?php
-                  $sql = "SELECT NumNomina , Nombre, Puesto FROM personal_sociometria WHERE ClaveTiempo = $ClaveTiempo";
+                  //$sql = "SELECT NumNomina , Nombre, Puesto FROM personal_sociometria WHERE ClaveTiempo = $ClaveTiempo";
+                  $sql = "SELECT NumNomina , Nombre, Puesto FROM personal_sociometria WHERE IdEmpresa = $ide";
                   $resultset = mysqli_query($con, $sql) or die("database error:". mysqli_error($conn));
                   if(mysqli_num_rows($resultset)) {
                     while( $rows = mysqli_fetch_assoc($resultset) ) {
