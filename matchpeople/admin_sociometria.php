@@ -34,6 +34,31 @@ ob_start();
 		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
 		}
 
+	 $preSql = "SELECT COUNT(IdResEncuesta) AS totalEnc FROM resencuesta_sociometria WHERE IdEmpresa = 2;";
+	 $posSql = "SELECT COUNT(IdResEncuesta) AS finishedEnc FROM resencuesta_sociometria WHERE IdEmpresa = 2 AND IdEstatus = 3;";
+	 $res1 = mysqli_query($con, $preSql);
+	 if (mysqli_num_rows($res1) > 0) {
+		while($row = mysqli_fetch_assoc($res1)) {
+			$totalEnc = $row['totalEnc'];
+		}
+	 }
+
+	 $res2 = mysqli_query($con, $posSql);
+	 if (mysqli_num_rows($res2) > 0) {
+		while($row = mysqli_fetch_assoc($res2)) {
+			$finishedEnc = $row['finishedEnc'];
+		}
+	 }
+
+	 echo '<script>console.log('.$totalEnc.')</script>';
+	 echo '<script>console.log('.$finishedEnc.')</script>';
+
+	 if($finishedEnc == 0) {
+	 	$percent = 0;
+	 } else {
+	 	$percent = floor(($finishedEnc * 100)/$totalEnc);
+	 }
+
 	 $sql = "SELECT encuesta_sociometria.IdEncuesta, empresas_sociometria.Nombre, encuesta_sociometria.Titulo,
 	 encuesta_sociometria.Fecha,encuesta_sociometria.porcentaje, encuesta_sociometria.IdEmpresa, encuesta_sociometria.papeleria, encuesta_sociometria.estatusId
 	 FROM encuesta_sociometria
@@ -42,6 +67,7 @@ ob_start();
   			if (mysqli_num_rows($result) > 0) {
   				// output data of each row
   				while($row = mysqli_fetch_assoc($result)) {
+  						$IdEmpresa = $row['IdEmpresa'];
 						$Titulo = $row['Titulo'];
 						$Titulo= strtoupper($Titulo);
 						$Fecha = $row['Fecha'];
@@ -54,7 +80,7 @@ ob_start();
 		   				<strong>Nombre de estudio:</strong> <span class='h2'><?php echo"$Titulo"; ?></span><br>
 							<strong>Año:</strong> <?php echo"$newDate "; ?>
 							<strong class='izquierdo'>Empresa: </strong><?php echo"$Empresa"; ?>
-							<strong class='izquierdo'>Estatus: </strong><?php echo"$Porcentaje %"; ?>
+							<strong class='izquierdo'>Estatus: </strong><?php if($IdEmpresa == 2) {echo"$percent %";} else {echo"$Porcentaje %";} ?>
 							<strong class='izquierdo'>Estado: </strong>
 						 	<?php if ($estatusId == "2") { $estatus ="Borrador";} else if($estatusId == "1"){$estatus ="Activa";} else{$estatus ="Terminado";} echo"$estatus"; ?>
 						</div>

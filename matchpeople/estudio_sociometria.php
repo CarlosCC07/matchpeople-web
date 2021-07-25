@@ -109,7 +109,7 @@
 	</div>
 </div>
 <div id='contenido' style="padding:2em 0;">
-	<form enctype="multipart/form-data" action="editar_sociometria.php?id=<?php echo"$IdPersonal"; ?>"  method="post" onSubmit="return validacion();">
+	<form enctype="multipart/form-data" action="editar_sociometria.php?id=<?php echo"$IdPersonal"; ?>"  method="post">
 	<div class='wrapper'>
 		<div class='veinte '>
 			<label># NOMINA</label>
@@ -312,6 +312,9 @@
 			  <option value="No" <?php if( $Act_socialesR4 == 'No') { echo"selected";}?>>No</option>
 			</select>
 		</div>
+		<input type="hidden" name="IdEmpresa" value="<?php echo"$IdEmpresa"; ?>" />
+		<input type="hidden" name="IdEmpleado" value="<?php echo"$IdEmpleado"; ?>" />
+		<input type="hidden" name="IdEncuesta" value="<?php echo "$IdEncuesta"; ?>" />
 		<input type="submit" class="btn_Enviar btn-default" name='btn_submit' value="Terminar">
 		<?php if($estatusId == "1"){ echo "<input type='submit' class='btnborrador btn-default' name='btn_submit' value='Guardar como borrador'>";}?>
 	</div>

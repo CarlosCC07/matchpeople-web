@@ -49,6 +49,46 @@ header('Location:login_vacante.php');
 				window.location.href = 'papeleria_sociometria.php';
 			</script>
 	<?php }
+	else if ($accion == "Terminar" || $accion == "Guardar como borrador"){
+		$IdEmpresa = $_POST["IdEmpresa"];
+		$IdEncuesta = $_POST["IdEncuesta"];
+		$IdEmpleado = $_POST["IdEmpleado"];
+		$act_formacionA = $_POST["act_formacionA"];
+		$act_formacionB = $_POST["act_formacionB"];
+		$act_formacionC = $_POST["act_formacionC"];
+		$act_formacion2 = $_POST["act_formacion2"];
+		$TRNombre_ascendencia1 = $_POST["TRNombre_ascendencia1"];
+		$TRNombre_ascendencia2 = $_POST["TRNombre_ascendencia2"];
+		$TRNombre_ascendencia3 = $_POST["TRNombre_ascendencia3"];
+		$TRNombre_afinidad1 = $_POST["TRNombre_afinidad1"];
+		$TRNombre_afinidad2 = $_POST["TRNombre_afinidad2"];
+		$TRNombre_afinidad3 = $_POST["TRNombre_afinidad3"];
+		$Act_TrabajoSN = $_POST["Act_TrabajoSN"];
+		//$Act_TrabajoR3 = $_POST["Act_TrabajoR3"];
+		$TRNombre_popularidad1 = $_POST["TRNombre_popularidad1"];
+		$TRNombre_popularidad2 = $_POST["TRNombre_popularidad2"];
+		$TRNombre_popularidad3 = $_POST["TRNombre_popularidad3"];
+		$Act_socialesR2 = $_POST["Act_socialesR2"];
+		$Act_socialesR3 = $_POST["Act_socialesR3"];
+		$Act_socialesR4 = $_POST["Act_socialesR4"];
+		if($accion == "Terminar") {
+			$IdEstatus = 3;
+		} else {
+			$IdEstatus = 2;
+		}
+		//IdResEncuesta = '',
+		//Act_TrabajoR3 = '$Act_TrabajoR3',
+		$sqlD = "UPDATE resencuesta_sociometria SET IdEstatus = '$IdEstatus', TRNombre_ascendencia1 = '$TRNombre_ascendencia1', TRNombre_ascendencia2 = '$TRNombre_ascendencia2', TRNombre_ascendencia3 = '$TRNombre_ascendencia3', TRNombre_afinidad1 = '$TRNombre_afinidad1', TRNombre_afinidad2 = '$TRNombre_afinidad2', TRNombre_afinidad3 = '$TRNombre_afinidad3', TRNombre_popularidad1 = '$TRNombre_popularidad1', TRNombre_popularidad2 = '$TRNombre_popularidad2', TRNombre_popularidad3 = '$TRNombre_popularidad3', act_formacionA = '$act_formacionA', act_formacionB = '$act_formacionB', act_formacionC = '$act_formacionC', act_formacionR2 = '$act_formacion2', Act_TrabajoSN = '$Act_TrabajoSN', Act_socialesR2 = '$Act_socialesR2', Act_socialesR3 = '$Act_socialesR3', Act_socialesR4 = '$Act_socialesR4' WHERE IdEmpresa = '$IdEmpresa' AND IdPersonal = '$IdEmpleado'";
+		//echo '<script>console.log('.$sqlD.')</script>';
+		if(!mysqli_query($con, $sqlD)){ die("Error: " . mysqli_error($con));}
+		else{ $msg = "El estudio esta terminado";}
+		?>
+		<meta charset='utf-8'>
+			<script type='text/javascript'>
+				alert("<?php echo $msg; ?>");
+				window.location.href = 'admin_sociometria.php';
+			</script>
+	<?php }
 	else if ($accion == "ver encuestas"){	?>
 		<!-- muestro los empleados y si ya contestaron o no la encuesta -->
 		<!doctype html>
