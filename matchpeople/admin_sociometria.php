@@ -34,8 +34,8 @@ ob_start();
 		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
 		}
 
-	 $preSql = "SELECT COUNT(IdResEncuesta) AS totalEnc FROM resencuesta_sociometria WHERE IdEmpresa = 2;";
-	 $posSql = "SELECT COUNT(IdResEncuesta) AS finishedEnc FROM resencuesta_sociometria WHERE IdEmpresa = 2 AND IdEstatus = 3;";
+	 $preSql = "SELECT COUNT(IdResEncuesta) AS totalEnc FROM resencuesta_sociometria WHERE IdEmpresa = 1;";
+	 $posSql = "SELECT COUNT(IdResEncuesta) AS finishedEnc FROM resencuesta_sociometria WHERE IdEmpresa = 1 AND IdEstatus = 3;";
 	 $res1 = mysqli_query($con, $preSql);
 	 if (mysqli_num_rows($res1) > 0) {
 		while($row = mysqli_fetch_assoc($res1)) {
