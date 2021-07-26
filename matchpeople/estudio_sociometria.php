@@ -32,6 +32,11 @@
 	.wrapper input{width: 98%; }
 	.noventaplus{width: 98%; }
 	.wrapper label{font-weight: 600; }
+  .destacado{font-size: 1.2em; font-weight: bold; color: darkred;}
+  input[type=password], input[type=text], input[type=email], input[type=number], textarea, select {
+  	color: #4c4c4c;
+    font-weight: 600;
+  }
 </style>
 <body>
 	<?php
@@ -113,15 +118,18 @@
 	<div class='wrapper'>
 		<div class='veinte '>
 			<label># NOMINA</label>
-			<input type="number" name="NumNomina" value="<?php echo"$NumNomina";?>" readonly style="background:#e2e2e2;">
+      <div class="destacado"><?php echo"$NumNomina";?></div>
+      <input type="hidden" name="NumNomina" value="<?php echo"$NumNomina";?>" >
 		</div>
 		<div class='cuarenta'>
 			<label>NOMBRE COMPLETO</label>
-			<input type="text" name="Nombre" value="<?php echo"$Nombre"; ?>" readonly style="background:#e2e2e2;">
+      <div class="destacado"><?php echo"$Nombre"; ?></div>
+			<input type="hidden" name="Nombre" value="<?php echo"$Nombre"; ?>">
 		</div>
 		<div class='treinta'>
 			<label>ÁREA</label>
-			<input type="text" name="Departamento" value="<?php echo"$Departamento"; ?>" readonly style="background:#e2e2e2;">
+      <div class="destacado"><?php echo"$Departamento"; ?></div>
+			<input type="hidden" name="Departamento" value="<?php echo"$Departamento"; ?>">
 		</div>
 		<div class='cien gap1'>
 			<h2>I. ACTIVIDADES DE FORMACIÓN</h2>
@@ -243,7 +251,7 @@
 			<input type="text" name="$Act_TrabajoR3" value="<?php echo"$Act_TrabajoR3";?>" placeholder="Comenta por favor:">
 		</div>
 		<div class='cien gap1'>
-			<h2>III. ACTIVIDADES SOCIALES</h2>
+			<h2>III. ACTIVIDADES FORMATIVAS</h2>
 		</div>
 		<div class='cien gap3'>
 			<label><?php echo"$Act_Popularidad"; ?></label>
@@ -262,7 +270,7 @@
 				 			 }} else { echo "<option value=''>No Hay Resultados</option>"; } ?>
 			</datalist>
 
-      <input list="TRNombre_popularidad2" type="text" name="TRNombre_popularidad2" value="<?php echo"$TRNombre_popularidad3"; ?>" class='gap1'>
+      <input list="TRNombre_popularidad2" type="text" name="TRNombre_popularidad2" value="<?php echo"$TRNombre_popularidad2"; ?>" class='gap1'>
 			<datalist id="TRNombre_popularidad2">
 				<?php $consulta = "SELECT * FROM personal_sociometria where IdEmpresa  = $IdEmpresa;";
 						 $resultV = mysqli_query($con, $consulta);
@@ -278,7 +286,7 @@
 			</datalist>
 
       <input list="TRNombre_popularidad3" type="text" name="TRNombre_popularidad3" value="<?php echo"$TRNombre_popularidad3"; ?>">
-			<datalist name="TRNombre_popularidad3" class='noventaplus'>
+			<datalist id="TRNombre_popularidad3" class='noventaplus'>
 				<?php $consulta = "SELECT * FROM personal_sociometria where IdEmpresa  = $IdEmpresa;";
 						 $resultV = mysqli_query($con, $consulta);
 						 if (mysqli_num_rows($resultV) > 0) {
@@ -315,8 +323,8 @@
 		<input type="hidden" name="IdEmpresa" value="<?php echo"$IdEmpresa"; ?>" />
 		<input type="hidden" name="IdEmpleado" value="<?php echo"$IdEmpleado"; ?>" />
 		<input type="hidden" name="IdEncuesta" value="<?php echo "$IdEncuesta"; ?>" />
-		<input type="submit" class="btn_Enviar btn-default" name='btn_submit' value="Terminar">
-		<?php if($estatusId == "1"){ echo "<input type='submit' class='btnborrador btn-default' name='btn_submit' value='Guardar como borrador'>";}?>
+		<input type="submit" class="btn_Enviar btn-default" name='btn_submit' value="Terminar y Enviar">
+		<?php if($estatusId == "1"){ echo "<input type='submit' class='btnborrador btn-default' name='btn_submit' value='Guardar'>";}?>
 	</div>
 	</form>
 </div>

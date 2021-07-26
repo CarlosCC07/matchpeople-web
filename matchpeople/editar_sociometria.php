@@ -49,7 +49,7 @@ header('Location:login_vacante.php');
 				window.location.href = 'papeleria_sociometria.php';
 			</script>
 	<?php }
-	else if ($accion == "Terminar" || $accion == "Guardar como borrador"){
+	else if ($accion == "Terminar y Enviar" || $accion == "Guardar"){
 		$IdEmpresa = $_POST["IdEmpresa"];
 		$IdEncuesta = $_POST["IdEncuesta"];
 		$IdEmpleado = $_POST["IdEmpleado"];
@@ -71,7 +71,7 @@ header('Location:login_vacante.php');
 		$Act_socialesR2 = $_POST["Act_socialesR2"];
 		$Act_socialesR3 = $_POST["Act_socialesR3"];
 		$Act_socialesR4 = $_POST["Act_socialesR4"];
-		if($accion == "Terminar") {
+		if($accion == "Terminar y Enviar") {
 			$IdEstatus = 3;
 		} else {
 			$IdEstatus = 2;
