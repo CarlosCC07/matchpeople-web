@@ -55,8 +55,8 @@
  resencuesta_sociometria.act_formacionC,resencuesta_sociometria.act_formacionR2,resencuesta_sociometria.Act_TrabajoSN,resencuesta_sociometria.Act_TrabajoR3,resencuesta_sociometria.Act_socialesR2,resencuesta_sociometria.Act_socialesR3,resencuesta_sociometria.Act_socialesR4
  FROM encuesta_sociometria
  INNER JOIN personal_sociometria ON encuesta_sociometria.IdEmpresa=personal_sociometria.IdEmpresa
- INNER JOIN resencuesta_sociometria ON encuesta_sociometria.IdEmpresa=resencuesta_sociometria.IdEmpresa
- where encuesta_sociometria.IdEmpresa = $Ide And encuesta_sociometria.estatusId = $estatus And personal_sociometria.IdPersonal = $IdEmpleado limit 1";
+ INNER JOIN resencuesta_sociometria ON encuesta_sociometria.IdEmpresa=resencuesta_sociometria.IdEmpresa AND personal_sociometria.IdPersonal = resencuesta_sociometria.IdPersonal
+ where encuesta_sociometria.IdEmpresa = $Ide And encuesta_sociometria.estatusId = $estatus And personal_sociometria.IdPersonal = $IdEmpleado";
 			$result = mysqli_query($con, $sql);
 			if (mysqli_num_rows($result) > 0) {
 				// output data of each row
