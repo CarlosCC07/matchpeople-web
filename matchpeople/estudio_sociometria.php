@@ -252,7 +252,7 @@
 			  <option value="Si" <?php if( $Act_TrabajoSN == 'Si') { echo"selected";}?>>Si</option>
 			  <option value="No" <?php if( $Act_TrabajoSN == 'No') { echo"selected";}?>>No</option>
 			</select>
-			<input type="text" name="Act_TrabajoR3" value="<?php echo"$Act_TrabajoR3";?>" placeholder="Comenta por favor:">
+			<input type="text" name="Act_TrabajoR3" value="<?php echo"$Act_TrabajoR3"; ?>" placeholder="Comenta por favor:">
 		</div>
 		<div class='cien gap1'>
 			<h2>III. PROMOCIÓN DE ACTIVIDADES Y/O CAMPAÑAS</h2>

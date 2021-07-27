@@ -74,6 +74,7 @@ if(empty( $_SESSION ['user'])){header('Location:login_vacante.php');}
 		} else {
 			$IdEstatus = 2;
 		}
+		 echo "<script>console.log(".$Act_TrabajoR3.")</script>";
 		//IdResEncuesta = '',
 		//Act_TrabajoR3 = '$Act_TrabajoR3',
 		$sqlD = "UPDATE resencuesta_sociometria SET IdEstatus = '$IdEstatus',
@@ -91,6 +92,7 @@ if(empty( $_SESSION ['user'])){header('Location:login_vacante.php');}
 		 act_formacionC = '$act_formacionC',
 		 act_formacionR2 = '$act_formacion2',
 		 Act_TrabajoSN = '$Act_TrabajoSN',
+		 Act_TrabajoR3 = '$Act_TrabajoR3',
 		 Act_socialesR2 = '$Act_socialesR2',
 		 Act_socialesR3 = '$Act_socialesR3',
 		 Act_socialesR4 = '$Act_socialesR4' WHERE IdEmpresa = '$IdEmpresa' AND IdPersonal = '$IdEmpleado'";
