@@ -1,8 +1,6 @@
 <?php
 session_start();
-if(empty( $_SESSION ['user'])){
-header('Location:login_vacante.php');
-	}
+if(empty( $_SESSION ['user'])){header('Location:login_vacante.php');}
 	//Conexion a la db
 	include("clavesbd.php");
 	$con = mysqli_connect($servername, $username, $password, $dbname);
@@ -64,7 +62,7 @@ header('Location:login_vacante.php');
 		$TRNombre_afinidad2 = $_POST["TRNombre_afinidad2"];
 		$TRNombre_afinidad3 = $_POST["TRNombre_afinidad3"];
 		$Act_TrabajoSN = $_POST["Act_TrabajoSN"];
-		//$Act_TrabajoR3 = $_POST["Act_TrabajoR3"];
+		$Act_TrabajoR3 = $_POST["Act_TrabajoR3"];
 		$TRNombre_popularidad1 = $_POST["TRNombre_popularidad1"];
 		$TRNombre_popularidad2 = $_POST["TRNombre_popularidad2"];
 		$TRNombre_popularidad3 = $_POST["TRNombre_popularidad3"];
@@ -78,15 +76,32 @@ header('Location:login_vacante.php');
 		}
 		//IdResEncuesta = '',
 		//Act_TrabajoR3 = '$Act_TrabajoR3',
-		$sqlD = "UPDATE resencuesta_sociometria SET IdEstatus = '$IdEstatus', TRNombre_ascendencia1 = '$TRNombre_ascendencia1', TRNombre_ascendencia2 = '$TRNombre_ascendencia2', TRNombre_ascendencia3 = '$TRNombre_ascendencia3', TRNombre_afinidad1 = '$TRNombre_afinidad1', TRNombre_afinidad2 = '$TRNombre_afinidad2', TRNombre_afinidad3 = '$TRNombre_afinidad3', TRNombre_popularidad1 = '$TRNombre_popularidad1', TRNombre_popularidad2 = '$TRNombre_popularidad2', TRNombre_popularidad3 = '$TRNombre_popularidad3', act_formacionA = '$act_formacionA', act_formacionB = '$act_formacionB', act_formacionC = '$act_formacionC', act_formacionR2 = '$act_formacion2', Act_TrabajoSN = '$Act_TrabajoSN', Act_socialesR2 = '$Act_socialesR2', Act_socialesR3 = '$Act_socialesR3', Act_socialesR4 = '$Act_socialesR4' WHERE IdEmpresa = '$IdEmpresa' AND IdPersonal = '$IdEmpleado'";
-		//echo '<script>console.log('.$sqlD.')</script>';
+		$sqlD = "UPDATE resencuesta_sociometria SET IdEstatus = '$IdEstatus',
+		 TRNombre_ascendencia1 = '$TRNombre_ascendencia1',
+		 TRNombre_ascendencia2 = '$TRNombre_ascendencia2',
+		 TRNombre_ascendencia3 = '$TRNombre_ascendencia3',
+		 TRNombre_afinidad1 = '$TRNombre_afinidad1',
+		 TRNombre_afinidad2 = '$TRNombre_afinidad2',
+		 TRNombre_afinidad3 = '$TRNombre_afinidad3',
+		 TRNombre_popularidad1 = '$TRNombre_popularidad1',
+		 TRNombre_popularidad2 = '$TRNombre_popularidad2',
+		 TRNombre_popularidad3 = '$TRNombre_popularidad3',
+		 act_formacionA = '$act_formacionA',
+		 act_formacionB = '$act_formacionB',
+		 act_formacionC = '$act_formacionC',
+		 act_formacionR2 = '$act_formacion2',
+		 Act_TrabajoSN = '$Act_TrabajoSN',
+		 Act_socialesR2 = '$Act_socialesR2',
+		 Act_socialesR3 = '$Act_socialesR3',
+		 Act_socialesR4 = '$Act_socialesR4' WHERE IdEmpresa = '$IdEmpresa' AND IdPersonal = '$IdEmpleado'";
+		//echo "<script>console.log("'.$sqlD.'")</script>";
 		if(!mysqli_query($con, $sqlD)){ die("Error: " . mysqli_error($con));}
 		else{ $msg = "El estudio esta terminado";}
 		?>
 		<meta charset='utf-8'>
 			<script type='text/javascript'>
 				alert("<?php echo $msg; ?>");
-				window.location.href = 'admin_sociometria.php';
+				window.location.href = 'index.php';
 			</script>
 	<?php }
 	else if ($accion == "ver encuestas"){	?>

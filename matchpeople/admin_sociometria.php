@@ -34,7 +34,7 @@ ob_start();
 		  echo "Failed to connect to MySQL: " . mysqli_connect_error();
 		}
 
-	 $preSql = "SELECT COUNT(IdResEncuesta) AS totalEnc FROM resencuesta_sociometria WHERE IdEmpresa = 1;";
+	 $preSql = "SELECT COUNT(IdResEncuesta) AS totalEnc FROM resencuesta_sociometria WHERE IdEmpresa = 1";
 	 $posSql = "SELECT COUNT(IdResEncuesta) AS finishedEnc FROM resencuesta_sociometria WHERE IdEmpresa = 1 AND IdEstatus = 3;";
 	 $res1 = mysqli_query($con, $preSql);
 	 if (mysqli_num_rows($res1) > 0) {
@@ -80,7 +80,7 @@ ob_start();
 		   				<strong>Nombre de estudio:</strong> <span class='h2'><?php echo"$Titulo"; ?></span><br>
 							<strong>Año:</strong> <?php echo"$newDate "; ?>
 							<strong class='izquierdo'>Empresa: </strong><?php echo"$Empresa"; ?>
-							<strong class='izquierdo'>Estatus: </strong><?php if($IdEmpresa == 2) {echo"$percent %";} else {echo"$Porcentaje %";} ?>
+							<strong class='izquierdo'>Estatus: </strong><?php if($IdEmpresa == 1) {echo"$percent %";} else {echo"$Porcentaje %";} ?>
 							<strong class='izquierdo'>Estado: </strong>
 						 	<?php if ($estatusId == "2") { $estatus ="Borrador";} else if($estatusId == "1"){$estatus ="Activa";} else{$estatus ="Terminado";} echo"$estatus"; ?>
 						</div>

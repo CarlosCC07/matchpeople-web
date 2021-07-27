@@ -25,7 +25,7 @@ where personal_sociometria.IdEmpresa = $ide AND resencuesta_sociometria.IdEstatu
 $email_to =   $Email2; //the address to which the email will be sent
 $name     =   'Matchpeople';
 $email    =   'non_replay@matchpeople.com';
-$subject  =   'ENCUESTA SEGURIDAD Y SALUD OCUPACIONAL';
+$subject  =   'SCANPAINT | ENCUESTA DE SEGURIDAD Y SALUD OCUPACIONAL';
 $MESSAGE_BODY ="
 					<!doctype html>
 					<html>
@@ -63,22 +63,21 @@ $MESSAGE_BODY ="
 					  <div class='wrapper'>
 					  		<div class='noventaplus'>
 					        <p>
-					        	Estimado <span class='destacado'>$nombre,</span>
+					        	Estimado(a) <span class='destacado'>$nombre,</span>
 					        </p>
 					        <p>
-						        En uno más de sus esfuerzos por construir un gran lugar para trabajar, retador y promotor de la mejora y bienestar de nuestros trabajadores, SCANPAINT emprende hoy la realización de una Encuesta de Opinión en Seguridad y Salud Ocupacional. La encuesta tiene la intención de fortalecer y mejorar la campaña de Seguridad y Salud en nuestra Empresa así como el de crear conciencia en la prevención en accidentes y contagios por el COVID-19, en donde tu punto de vista es un elemento valioso para desarrollar algunas de las actividades de prevención.
+						        En uno más de los esfuerzos por construir un gran lugar para trabajar, retador y promotor de la mejora y bienestar de nuestros trabajadores, SCANPAINT emprende hoy la realización de una Encuesta de Opinión en Seguridad y Salud Ocupacional. La encuesta tiene la intención de fortalecer y mejorar la campaña de Seguridad y Salud en nuestra Empresa así como el de crear conciencia en la prevención en accidentes y contagios por el COVID-19, en donde tu punto de vista es un elemento valioso para desarrollar algunas de las actividades de prevención.
 									</p><br>
 					        <p>
-										Match People, empresa de consultoría de Capital Humano procesará las encuestas y nos hará más sencilla la realización del ejercicio, su interpretación y presentación.
-										Al final de este mensaje te enviaremos una liga para que accedas a la encuesta en la plataforma de Match People a fin de que compartas tu opinión.<br>
-										Con la finalidad de procesar oportunamente la información, te pedimos que respondas antes del <span style='color:darkred; font-weight: bold;'>31 de Julio 2021</span>.
+										Match People, empresa de consultoría de Capital Humano procesará las encuestas y nos hará más sencilla la realización del ejercicio, su interpretación y presentación. Al final de este mensaje te enviaremos una liga para que accedas a la encuesta en la plataforma de Match People a fin de que compartas tu opinión.
+										Con la finalidad de procesar oportunamente la información te pedimos responder la Encuesta antes del <span style='color:darkred; font-weight: bold;'>04 de Agosto del 2021.</span>
 					        </p><br>
 									<p>
 					        	<span style='font-weight: bold;'> Para acceder al sistema, continúa con las siguientes instrucciones:</span>
 					        </p>
 					        <ol>
 					          <li>Da clic en la siguiente liga: <a href='http://demo.matchpeople.com/estudio_sociometria.php?id=$IdEmpresa:$IdPersonal' target='_blank' ><strong>Ir a encuesta</strong> </a></li>
-					          <li>Enseguida aparecerá un mensaje de bienvenida y las instrucciones para completar el cuestionario que te han sido asignado.</li>
+					          <li>Te aparecerá un breve mensaje de bienvenida y podrás iniciar el llenado de la encuesta.</li>
 					          <li>Al terminar la evaluación, oprime el botón <strong>TERMINAR Y ENVIAR</strong> para concluir la evaluación.</li>
 					        </ol>
 					        <p>
@@ -95,7 +94,7 @@ $MESSAGE_BODY ="
 					</body>
 					</html>
 					";
-$message  = utf8_decode($MESSAGE_BODY);
+$message  = $MESSAGE_BODY;
 $headers  = "From: $email\r\n";
 $headers .= "Reply-To: $email\r\n";
 $headers .= "MIME-version: 1.0\n";

@@ -57,7 +57,7 @@
  $sql = "SELECT encuesta_sociometria.IdEncuesta, encuesta_sociometria.IdEmpresa, encuesta_sociometria.Titulo, encuesta_sociometria.act_formacion1, encuesta_sociometria.act_formacion2, encuesta_sociometria.Act_Ascendencia, encuesta_sociometria.Act_Afinidad,	encuesta_sociometria.Act_Trabajo3, encuesta_sociometria.Act_Popularidad, encuesta_sociometria.Act_sociales2, encuesta_sociometria.Act_sociales3, encuesta_sociometria.Act_sociales4,encuesta_sociometria.papeleria,encuesta_sociometria.estatusId,
  personal_sociometria.IdPersonal, personal_sociometria.NumNomina, personal_sociometria.Nombre, personal_sociometria.Departamento, personal_sociometria.Turno,
  resencuesta_sociometria.TRNombre_ascendencia1,resencuesta_sociometria.TRNombre_ascendencia2,resencuesta_sociometria.TRNombre_ascendencia3,resencuesta_sociometria.TRNombre_afinidad1,resencuesta_sociometria.TRNombre_afinidad2,resencuesta_sociometria.TRNombre_afinidad3,resencuesta_sociometria.TRNombre_popularidad1,resencuesta_sociometria.TRNombre_popularidad2,resencuesta_sociometria.TRNombre_popularidad3,resencuesta_sociometria.act_formacionA,resencuesta_sociometria.act_formacionB,
- resencuesta_sociometria.act_formacionC,resencuesta_sociometria.act_formacionR2,resencuesta_sociometria.Act_TrabajoSN,resencuesta_sociometria.Act_TrabajoR3,resencuesta_sociometria.Act_socialesR2,resencuesta_sociometria.Act_socialesR3,resencuesta_sociometria.Act_socialesR4
+ resencuesta_sociometria.act_formacionC,resencuesta_sociometria.act_formacionR2,resencuesta_sociometria.Act_TrabajoSN,resencuesta_sociometria.Act_TrabajoR3,resencuesta_sociometria.Act_socialesR2,resencuesta_sociometria.Act_socialesR3,resencuesta_sociometria.Act_socialesR4,resencuesta_sociometria.IdEstatus
  FROM encuesta_sociometria
  INNER JOIN personal_sociometria ON encuesta_sociometria.IdEmpresa=personal_sociometria.IdEmpresa
  INNER JOIN resencuesta_sociometria ON encuesta_sociometria.IdEmpresa=resencuesta_sociometria.IdEmpresa AND personal_sociometria.IdPersonal = resencuesta_sociometria.IdPersonal
@@ -103,11 +103,12 @@
 					$Act_socialesR3 = $row['Act_socialesR3'];
 					$Act_socialesR4 = $row['Act_socialesR4'];
 					$estatusId = $row['estatusId'];
+          $estatusEncuesta = $row['IdEstatus'];
+
 ?>
 <div style="height: 270px; background-image: url('img/blueline.jpg'); background-repeat: no-repeat;background-size: cover; background-position: center;">
 	<div id="cabezera" >
 		<img src="img/logoMatchpeople.png" alt="logo matchpeople consultoria"> <br>
-		<span></span>
 	</div>
 	<div style="text-align: center; font-size: 2.5em; font-weight: 600; padding:1em; background-color: #f0f8ff96;">
 		<?php echo"$Titulo"; ?>
@@ -116,6 +117,9 @@
 <div id='contenido' style="padding:2em 0;">
 	<form enctype="multipart/form-data" action="editar_sociometria.php?id=<?php echo"$IdPersonal"; ?>"  method="post">
 	<div class='wrapper'>
+    <div class="cien gap3 ">
+      <label>Apreciamos tu sincera aportación y agradecemos de antemano tu colaboración en este ejercicio.</label>
+    </div>
 		<div class='veinte '>
 			<label># NOMINA</label>
       <div class="destacado"><?php echo"$NumNomina";?></div>
@@ -132,7 +136,7 @@
 			<input type="hidden" name="Departamento" value="<?php echo"$Departamento"; ?>">
 		</div>
 		<div class='cien gap1'>
-			<h2>I. ACTIVIDADES DE FORMACIÓN</h2>
+			<h2>I. DESARROLLO DE ACTIVIDADES DE FORMACIÓN</h2>
 		</div>
 		<div class='cien gap3'>
 			<label><?php echo"$act_formacion1"; ?></label>
@@ -145,7 +149,7 @@
 			<input type="text" name="act_formacion2" value="<?php echo"$act_formacionR2"; ?>">
 		</div>
 		<div class='cien gap1'>
-			<h2>II. ACTIVIDADES DE TRABAJO</h2>
+			<h2>II. DESARROLLO DE ACTIVIDADES DE TRABAJO</h2>
 		</div>
 		<div class='cien gap3'>
 			<label><?php echo"$Act_Ascendencia"; ?></label>
@@ -248,10 +252,10 @@
 			  <option value="Si" <?php if( $Act_TrabajoSN == 'Si') { echo"selected";}?>>Si</option>
 			  <option value="No" <?php if( $Act_TrabajoSN == 'No') { echo"selected";}?>>No</option>
 			</select>
-			<input type="text" name="$Act_TrabajoR3" value="<?php echo"$Act_TrabajoR3";?>" placeholder="Comenta por favor:">
+			<input type="text" name="Act_TrabajoR3" value="<?php echo"$Act_TrabajoR3";?>" placeholder="Comenta por favor:">
 		</div>
 		<div class='cien gap1'>
-			<h2>III. ACTIVIDADES FORMATIVAS</h2>
+			<h2>III. PROMOCIÓN DE ACTIVIDADES Y/O CAMPAÑAS</h2>
 		</div>
 		<div class='cien gap3'>
 			<label><?php echo"$Act_Popularidad"; ?></label>
@@ -323,8 +327,9 @@
 		<input type="hidden" name="IdEmpresa" value="<?php echo"$IdEmpresa"; ?>" />
 		<input type="hidden" name="IdEmpleado" value="<?php echo"$IdEmpleado"; ?>" />
 		<input type="hidden" name="IdEncuesta" value="<?php echo "$IdEncuesta"; ?>" />
-		<input type="submit" class="btn_Enviar btn-default" name='btn_submit' value="Terminar y Enviar">
-		<?php if($estatusId == "1"){ echo "<input type='submit' class='btnborrador btn-default' name='btn_submit' value='Guardar'>";}?>
+    <?php if($estatusEncuesta != "3"){ echo "<input type='submit' class='btnborrador btn-default' name='btn_submit' value='Guardar'>";}?>
+		<?php if($estatusEncuesta != "3"){ echo "<input type='submit' class='btn_Enviar btn-default' name='btn_submit' value='Terminar y Enviar'>";}?>
+
 	</div>
 	</form>
 </div>
